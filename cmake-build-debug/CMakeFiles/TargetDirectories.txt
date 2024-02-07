@@ -1,0 +1,3 @@
+C:/Users/Home/Desktop/HW2_10010_2024A (1)/Airport_Ltd/cmake-build-debug/CMakeFiles/Desktop.dir
+C:/Users/Home/Desktop/HW2_10010_2024A (1)/Airport_Ltd/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Home/Desktop/HW2_10010_2024A (1)/Airport_Ltd/cmake-build-debug/CMakeFiles/rebuild_cache.dir
