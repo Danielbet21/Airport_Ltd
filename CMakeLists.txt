@@ -7,4 +7,6 @@ add_executable(Desktop main.c
         flight.c
         flight.h
         plane.h
-        plane.c)
+        plane.c
+        airport.c
+        airport.h)

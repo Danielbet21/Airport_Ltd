@@ -1,12 +1,14 @@
 //#ifndef FLIGHT_H
 //#define FLIGHT_H
 //
-//typedef struct{
+//#include "plane.h"
+//
+//typedef struct {
 //    int airport_c_sour;
 //    int airport_c_Tar;
 //    Plane *plane_data;
 //    char *date;
-//}Flight;
+//} Flight;
 //
 //Flight initFlight();
 //
@@ -14,5 +16,6 @@
 //
 //int isFlightToDestAirport(Flight *flight, int airport_code_des);
 //
-//int isPlanTypeInFlight(Flight *flight,Plane *plane);
+//int isPlanTypeInFlight(Flight *flight, Plane *plane);
+//
 //#endif //FLIGHT_H
