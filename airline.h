@@ -3,7 +3,7 @@
 
 #include "flight.h"
 #include "plane.h"
-
+#include "generalStrings.h"
 // airline struct
 typedef struct {
     char *companyName;
@@ -15,12 +15,12 @@ typedef struct {
 
 
 // functions
-int initAirline(Airline *pAirline, char *companyName);
+int initAirline(Airline *pAirline);
 void printAirline(const Airline *pAirline);
 void freeAirline(Airline *pAirline);
 int addFlight(Airline *pAirline, Flight *pFlight);
 int addPlane(Airline *pAirline, Plane *pPlane);
-void doPrintFlightsWithPlaneType(Airline *pAirline);
+void doPrintFlightsWithPlaneType(const Airline *pAirline);
 
 
 

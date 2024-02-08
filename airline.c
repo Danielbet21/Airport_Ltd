@@ -1,21 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "string.h"
+#include <string.h>
 #include "airline.h"
 
 
 
-int initAirline(Airline *pAirline, char *companyName) {
+int initAirline(Airline *pAirline) {
+    pAirline->companyName = getStrExactLength("Enter Airline name");
 //  check if name is valid
-    if (companyName == NULL || !strlen(companyName)) {
+    if (pAirline->companyName == NULL || !strlen(pAirline->companyName)) {
+        free(pAirline->companyName);
         return 0;
     }
-    pAirline->companyName = companyName;
     pAirline->numOfFlights = 0;
     pAirline->flightArr = NULL;
     pAirline->numOfAirPlanes = 0;
     pAirline->airPlanesArr = NULL;
+    return 1;
 }
+
 void printAirline(const Airline *pAirline) {
     printf("Airline %s\n\n",pAirline->companyName);
     printf(" -------- Has %d planes\n",pAirline->numOfAirPlanes);
@@ -77,7 +80,7 @@ int addPlane(Airline *pAirline, Plane *pPlane) {
     return 1;
 }
 
-void doPrintFlightsWithPlaneType(Airline *pAirline){
+void doPrintFlightsWithPlaneType(const Airline *pAirline){
     int userSelect = getTypeFromUser();
     printf("Flights with plane type %s:\n",PlaneTypesTitle[userSelect]);
     int check = 0;
