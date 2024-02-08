@@ -5,4 +5,6 @@ set(CMAKE_C_STANDARD 11)
 
 add_executable(Desktop main.c
         flight.c
-        flight.h)
+        flight.h
+        plane.h
+        plane.c)
