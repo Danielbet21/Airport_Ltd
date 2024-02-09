@@ -9,4 +9,6 @@ add_executable(Desktop main.c
         plane.h
         plane.c
         airport.c
-        airport.h)
+        airport.h
+        date.c
+        date.h)

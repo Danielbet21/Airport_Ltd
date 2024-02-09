@@ -3,6 +3,9 @@
 #include "stdlib.h"
 #include "string.h"
 
+
+//---------------------------------------- add printing------------------------------------
+
 void initAirport(Airport *pAirport) {
     printf("Add airport name:\n");
     char *name = NULL;
