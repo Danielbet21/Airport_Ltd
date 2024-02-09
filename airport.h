@@ -12,11 +12,11 @@ typedef struct {
 
 void initAirport(Airport *pAirport);
 
-int validateIATA(char *code);
+char* validateIATA();
 
 int isSameAirport(Airport *airport1, Airport *airport2);
 
-int isAirportCode(Airport *airport, char *IATA);
+int isAirportCode(Airport *airport, const char *IATA);
 
 char *validateName(char *name);
 

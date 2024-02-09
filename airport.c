@@ -3,22 +3,62 @@
 #include "stdlib.h"
 #include "string.h"
 
-int validateIATA(char *code) {
-    if (strlen(code) != 3 || code[0] != 'A') {
-        printf("invalid code IATA.\n");
-        return 0;
-    } else {
-        return 1;
+void initAirport(Airport *pAirport) {
+    printf("Add airport name:\n");
+    char *name = NULL;
+    scanf("%s", name); // validation
+    name = validateName(name);
+    pAirport->airport_name = name;
+
+    printf("Add airport's country:\n");
+    scanf("%s", pAirport->country);
+
+    char *res = validateIATA();
+    for (int i = 0; i < 3; ++i) {
+        pAirport->IATA[i] = res[i];
     }
 }
 
-char *addIATA(manager_airport a) {
-    int length = sizeof(a.airportArr) / sizeof(a.airportArr[0]);
-    for (int i = 0; i < length; ++i) {
-        for (int j = 0; j < length; ++j) {
-
-        }
+int isSameAirport(Airport *airport1, Airport *airport2) {
+    if (airport1->IATA == airport2->IATA) {
+        return 1;
+    } else {
+        return 0;
     }
+}
+
+int isAirportCode(Airport *airport, const char *IATA) {
+    if (airport->IATA == IATA) {
+        return 1;
+    } else {
+        return 0;
+    }
+}
+
+char *validateIATA() {
+    char *code;
+    do {
+        printf("Enter airport code  - 3 UPPER CASE letters\n");
+        scanf("%s", code);
+        if (strlen(code) != 3) {
+            printf("code should be 3 letters\n");
+            continue;
+        }
+        int isValid = 1;
+        for (int i = 0; i < 3; ++i) {
+            if ((code[i]) < 'A' || code[i] > 'Z') {
+                printf("%c", code[i]);
+                printf("All characters should be upper case letters\n");
+                isValid = 0;
+                break;
+            }
+        }
+        if (!isValid) {
+            continue;
+        }
+        break; // Exit loop if the code is valid
+    } while (1);
+    return code;
 }
 
 char *dynamicAlloc(int num_of_words) {
@@ -77,12 +117,12 @@ char *insertBlank(char *name, int num_of_words) {
                 }
                 new_name[j] = name[j];
             } else {
-                new_name[j] = '_';
+                new_name[j] = name[j];
             }
             i++;
         }
         new_name[i] = '\0';
-    }else if(num_of_words % 2 == 0) {
+    } else if (num_of_words % 2 == 0) {
         int i = 0;
         for (int j = 0; j < strlen(name); ++j) {
             if (name[j] <= 'z' && name[j] >= 'a' || name[j] <= 'Z' && name[j] >= 'A') {
@@ -90,9 +130,9 @@ char *insertBlank(char *name, int num_of_words) {
                     new_name[i] = converter(name, new_name, j);
                 }
                 new_name[i] = name[j];
-            } else if(name[j] == ' '){
-                new_name[i] = '_';
-                new_name[++i] = '_';
+            } else if (name[j] == ' ') {
+                new_name[i] = ' ';
+                new_name[++i] = ' ';
             }
             i++;
         }
@@ -129,38 +169,4 @@ char *validateName(char *name) {
         new_name++;
     }
     return insertBlank(new_name, num_of_words);
-}
-
-
-void initAirport(Airport *pAirport) {
-    printf("Add airport name:\n");
-    scanf("%s", pAirport->airport_name); // validation
-    printf("Add airport's country:\n");
-    scanf("%s", pAirport->country);
-    addIATA(manager_airport);
-}
-
-int isSameAirport(Airport *airport1, Airport *airport2) {
-    if (airport1->IATA == airport2->IATA) {
-        return 1;
-    } else {
-        return 0;
-    }
-}
-
-int isAirportCode(Airport *airport, char *IATA) {
-    if (!(validateIATA(IATA))) {
-        return 0;
-    } else if (airport->IATA == IATA) {
-        return 1;
-    } else {
-        return 0;
-    }
-}
-
-char *initIATA(Airport_maneger maneger, int length_of_airports) {
-
-    for (int i = 0; i < length_of_airports; ++i) {
-
-    }
 }
