@@ -7,13 +7,13 @@
 //---------------------------------------- add printing------------------------------------
 
 void initAirport(Airport *pAirport) {
-    printf("Add airport name:\n");
+    printf("Enter airport name\n");
     char *name = NULL;
     scanf("%s", name); // validation
     name = validateName(name);
     pAirport->airport_name = name;
 
-    printf("Add airport's country:\n");
+    printf("Enter airport country\n");
     scanf("%s", pAirport->country);
 
     char *res = validateIATA();

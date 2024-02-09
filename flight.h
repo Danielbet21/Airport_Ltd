@@ -19,6 +19,6 @@ int isFlightToDestAirport(const Flight *flight, const char* airport_code_des);
 
 int isPlanTypeInFlight(Flight *flight, Plane *plane);
 
-void printFlight(PlaneType type,Airline airline,int length);
+//void printFlight(PlaneType type,Airline airline,int length);
 
 #endif //FLIGHT_H

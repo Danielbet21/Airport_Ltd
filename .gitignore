@@ -1,4 +1,5 @@
 #files
-main.c
 plane.c
 plane.h
+flight.c
+flight.h
