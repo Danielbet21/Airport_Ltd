@@ -1,6 +1,7 @@
 #include "stdio.h"
 #include "string.h"
 #include "airportManager.h"
+#include "airport.h"
 
 AirportManager initAirportManager() {
     AirportManager manager;
