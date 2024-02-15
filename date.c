@@ -80,7 +80,7 @@ int initDateFromString(Date *pDate, char *dateStr) {
     return (initDate(pDate, dateArr[0], dateArr[1], dateArr[2]));
 }
 
-int getCorrectDate(Date *pDate) {
+void getCorrectDate(Date *pDate) {
     int res = 0;
     char *strDate;
     while (!res) {
@@ -91,5 +91,5 @@ int getCorrectDate(Date *pDate) {
         }
     }
     free(strDate);
-    return res;
+
 }
