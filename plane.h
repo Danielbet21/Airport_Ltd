@@ -12,8 +12,10 @@ typedef struct {
 
 
 // functions
-int initPlane(Plane *pPlane, int serialNum, PlaneType type);
+void initPlane(Plane* pPlane, Plane* planeArr, int planeCount);
 PlaneType getTypeFromUser();
 void printPlane(const Plane *pPlane);
+int getSerialNumberFromUser();
+int checkSerialNumber(int SerialNumber, Plane* planeArr, int planeCount);
 
 #endif
