@@ -3,8 +3,6 @@
 #include <string.h>
 #include "airline.h"
 
-
-
 int initAirline(Airline *pAirline) {
     pAirline->companyName = getStrExactLength("Enter Airline name");
 //  check if name is valid
@@ -33,6 +31,7 @@ void printAirline(const Airline *pAirline) {
         printFlight(pAirline->flightArr[i]);
     }
 }
+
 void freeAirline(Airline *pAirline) {
     free(pAirline->companyName);
 //  free flights
@@ -58,6 +57,7 @@ int addFlight(Airline *pAirline, Flight *pFlight) {
     pAirline->numOfFlights++;
     return 1;
 }
+
 int addPlane(Airline *pAirline, Plane *pPlane) {
 //  check if plane is not null
     if (!pPlane) {

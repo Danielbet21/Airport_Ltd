@@ -13,7 +13,6 @@ typedef struct {
     Plane *airPlanesArr;
 } Airline;
 
-
 // functions
 int initAirline(Airline *pAirline);
 void printAirline(const Airline *pAirline);
