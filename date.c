@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 #include "date.h"
 #include "generalStrings.h"
-#include "stdlib.h"
 #define DATE_DELIMITER '/'
 #define VALID_YEAR_START 2023
 
