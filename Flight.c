@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include "flight.h"
+#include "Flight.h"
 
 char *chooseAirport(Flight *pFlight, const AirportManager *pManager, int isSource){
     // set the output message

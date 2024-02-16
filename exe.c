@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "exe.h"
-#include "airline.h"
+#include "Airline.h"
 
 void manualTest() {
     int userSelect = -1;
@@ -53,7 +53,7 @@ void manualTest() {
 
 
 // TODO add all the required free
-    freeAirline(&airline);
+    freeCompany(&airline);
 //  freeAirportManager(&airportManger);
 
 }

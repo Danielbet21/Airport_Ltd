@@ -1,22 +1,23 @@
 #ifndef __AIRLINE__
 #define __AIRLINE__
 
-#include "flight.h"
-#include "plane.h"
+#include "Flight.h"
+#include "Plane.h"
 #include "generalStrings.h"
 // airline struct
 typedef struct {
-    char *companyName;
+    char *name;
     int numOfFlights;
     Flight **flightArr;
-    int numOfAirPlanes;
-    Plane *airPlanesArr;
+    int planeCount;
+    Plane *planeArr;
 } Airline;
 
 // functions
 int initAirline(Airline *pAirline);
 void printAirline(const Airline *pAirline);
-void freeAirline(Airline *pAirline);
+void freeCompany(Airline *pAirline);
+void printFlightsArr(const Airline *pAirline);
 int addFlight(Airline *pAirline, Flight *pFlight);
 int addPlane(Airline *pAirline);
 void doPrintFlightsWithPlaneType(const Airline *pAirline);

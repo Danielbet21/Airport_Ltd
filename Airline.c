@@ -1,46 +1,48 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "airline.h"
+#include "Airline.h"
 
 int initAirline(Airline *pAirline) {
-    pAirline->companyName = getStrExactLength("Enter Airline name");
+    pAirline->name = getStrExactLength("Enter Airline name");
 //  check if name is valid
-    if (pAirline->companyName == NULL || !strlen(pAirline->companyName)) {
-        free(pAirline->companyName);
+    if (pAirline->name == NULL || !strlen(pAirline->name)) {
+        free(pAirline->name);
         return 0;
     }
     pAirline->numOfFlights = 0;
     pAirline->flightArr = NULL;
-    pAirline->numOfAirPlanes = 0;
-    pAirline->airPlanesArr = NULL;
+    pAirline->planeCount = 0;
+    pAirline->planeArr = NULL;
     return 1;
 }
 
 void printAirline(const Airline *pAirline) {
-    printf("Airline %s\n\n",pAirline->companyName);
-    printf(" -------- Has %d planes\n",pAirline->numOfAirPlanes);
-//  print all airplanes
-    for (int i = 0; i < pAirline->numOfAirPlanes; i++) {
-        printPlane(&pAirline->airPlanesArr[i]);
-    }
+    printf("Airline %s\n\n",pAirline->name);
+    printf(" -------- Has %d planes\n",pAirline->planeCount);
+    printPlanesArr(pAirline->planeArr, pAirline->planeCount);
     printf("\n\n");
     printf(" -------- Has %d flights\n", pAirline->numOfFlights);
-//  print all flights
+    printFlightsArr(pAirline);
+
+}
+
+
+void printFlightsArr(const Airline *pAirline) {
     for (int i = 0; i < pAirline->numOfFlights; i++) {
         printFlight(pAirline->flightArr[i]);
     }
 }
 
-void freeAirline(Airline *pAirline) {
-    free(pAirline->companyName);
+void freeCompany(Airline *pAirline) {
+    free(pAirline->name);
 //  free flights
     for (int i = 0; i < pAirline->numOfFlights ; ++i) {
         freeFlight(pAirline->flightArr[i]);
     }
     free(pAirline->flightArr);
 //  free planes
-    free(pAirline->airPlanesArr);
+    free(pAirline->planeArr);
 }
 
 int addFlight(Airline *pAirline, Flight *pFlight) {
@@ -62,16 +64,16 @@ int addFlight(Airline *pAirline, Flight *pFlight) {
 int addPlane(Airline *pAirline) {
     // init the new plane
     Plane plane;
-    initPlane(&plane, pAirline->airPlanesArr, pAirline->numOfAirPlanes);
+    initPlane(&plane, pAirline->planeArr, pAirline->planeCount);
 
     // try to add the new plane to airline
-    pAirline->airPlanesArr = (Plane*) realloc(pAirline->airPlanesArr, (pAirline->numOfAirPlanes+1) *(sizeof(Plane)));
+    pAirline->planeArr = (Plane*) realloc(pAirline->planeArr, (pAirline->planeCount + 1) * (sizeof(Plane)));
 //  if allocate failed
-    if (!pAirline->airPlanesArr) {
+    if (!pAirline->planeArr) {
         return 0;
     }
-    pAirline->airPlanesArr[pAirline->numOfAirPlanes] = plane;
-    pAirline->numOfAirPlanes++;
+    pAirline->planeArr[pAirline->planeCount] = plane;
+    pAirline->planeCount++;
     return 1;
 }
 
@@ -80,8 +82,8 @@ void doPrintFlightsWithPlaneType(const Airline *pAirline){
     printf("Flights with plane type %s:\n",PlaneTypesTitle[userSelect]);
     int check = 0;
     for (int i = 0; i < pAirline->numOfFlights; ++i) {
-        if (pAirline->flightArr[i]->plane.type == userSelect) {
-            printPlane(&pAirline->flightArr[i]->plane);
+        if (pAirline->flightArr[i]->plane->type == userSelect) {
+            printPlane(pAirline->flightArr[i]->plane);
             check =1;
         }
     }

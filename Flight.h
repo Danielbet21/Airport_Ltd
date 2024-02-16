@@ -1,7 +1,7 @@
 #ifndef __FLIGHT_H__
 #define __FLIGHT_H__
 
-#include "plane.h"
+#include "Plane.h"
 #include "date.h"
 #include "airportManager.h"
 #include "generalStrings.h"

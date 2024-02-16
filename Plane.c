@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "plane.h"
+#include "Plane.h"
 
 #define MIN_SERIAL_NUM 1
 #define MAX_SERIAL_NUM 9999
@@ -50,5 +50,13 @@ PlaneType getTypeFromUser(){
 void printPlane(const Plane *pPlane){
     printf("Plane: serial number:%d, type %s\n", pPlane->serialNum, PlaneTypesTitle[pPlane->type]);
 };
+
+
+void printPlanesArr(const Plane *planeArr, int arraySize) {
+    for (int i = 0; i < arraySize; i++) {
+        printPlane(planeArr + i);
+    }
+}
+
 
 
