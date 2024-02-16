@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 #include "date.h"
-
+#include "generalStrings.h"
 #define DATE_DELIMITER '/'
 #define VALID_YEAR_START 2023
 
@@ -13,6 +14,7 @@ int initDate(Date *pDate, int day, int month, int year) {
     pDate->day = day;
     pDate->month = month;
     pDate->year = year;
+    return 1;
 };
 
 
@@ -42,10 +44,8 @@ int isDayValid(int day,int month) {
 }
 
 void printDate(const Date *pDate) {
-    printf("%d%c%d%c%d",pDate->day,DATE_DELIMITER, pDate->month,DATE_DELIMITER, pDate->year);
+    printf("Date: %d%c%d%c%d",pDate->day,DATE_DELIMITER, pDate->month,DATE_DELIMITER, pDate->year);
 };
-
-
 
 int initDateFromString(Date *pDate, char *dateStr) {
 //  Need to get a string with this format: dd##mm##yyyy
@@ -78,4 +78,18 @@ int initDateFromString(Date *pDate, char *dateStr) {
         }
     }
     return (initDate(pDate, dateArr[0], dateArr[1], dateArr[2]));
+}
+
+void getCorrectDate(Date *pDate) {
+    int res = 0;
+    char *strDate;
+    while (!res) {
+        strDate = getStrExactLength("Enter Flight Date dd##mm##yyyy  minimum year 2023");
+        res = initDateFromString(pDate,strDate);
+        if (!res) {
+            printf("Error try again\n");
+        }
+    }
+    free(strDate);
+
 }
