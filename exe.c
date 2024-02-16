@@ -5,8 +5,8 @@
 void manualTest() {
     int userSelect = -1;
 //  setup Airport Manager
-//    AirportManager airportManager;
-//    initAirportManager(&airportManager);
+    AirportManager airportManager;
+    initAirportManager(&airportManager);
 //    TODO NEED TO ADD MANGER SETUP!!!!!!
 
 
@@ -28,7 +28,9 @@ void manualTest() {
                 break;
             case 2:
                 // Add Flight
-//                addFlight()
+                if (!addFlight(&airline, &airportManager)) {
+                    printf("Error adding flight\n");
+                }
                 break;
             case 3:
                 // Print Airline

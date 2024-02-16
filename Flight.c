@@ -18,7 +18,7 @@ char *chooseAirport(Flight *pFlight, const AirportManager *pManager, int isSourc
         printf("Enter code of %s airport:",outPutMessage);
         airportCode = getStrExactLength(NULL);
         validCode = codeExist(pManager, airportCode);
-        if (validCode &&!isSource && strcmp(pFlight->airport_c_sour,airportCode) == 0 ) {
+        if (validCode &&!isSource && isFlightFromSourceAirport(pFlight, airportCode))  {
 //          check the destination code is not source code
             printf("Same origin and destination airport\n");
           validCode = 0;
@@ -29,10 +29,11 @@ char *chooseAirport(Flight *pFlight, const AirportManager *pManager, int isSourc
 
 int initFlight(Flight *pFlight,const AirportManager *pManager,Plane *pPlane){
     // if plane is NULL will free the flight and return 0
-    if(pManager->airportLength < 2 || !pPlane) {
-        freeFlight(pFlight);
-        return 0;
-    }
+//    TODO unmark
+//    if(pManager->airportLength < 2 || !pPlane) {
+//        freeFlight(pFlight);
+//        return 0;
+//    }
     // set the airport codes (for source and destination)
     pFlight->airport_c_sour = chooseAirport(pFlight,pManager, 1);
     pFlight->airport_c_Tar = chooseAirport(pFlight, pManager, 0);

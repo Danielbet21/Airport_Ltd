@@ -58,5 +58,29 @@ void printPlanesArr(const Plane *planeArr, int arraySize) {
     }
 }
 
+Plane* getPlaneFromArr(Plane *planeArr, int arraySize) {
+    printf("Choose a plane from list, type its serial Number\n");
+    printPlanesArr(planeArr, arraySize);
+    Plane *pPlane = NULL;
+    int userSerialNum = 0;
+    while (!pPlane) {
+        scanf("%d",&userSerialNum);
+        if (userSerialNum < MIN_SERIAL_NUM || userSerialNum > MAX_SERIAL_NUM) {
+            printf("No plane with that serial number! Try again!\n");
+        }
+        else {
+            pPlane = getPlaneWithSerialNumber(planeArr,arraySize,userSerialNum);
+            if (!pPlane) {
+                printf("No plane with that serial number! Try again!\n");
+        }
+    }}
+}
 
-
+Plane* getPlaneWithSerialNumber(Plane *planeArr, int arraySize, int serialNumber) {
+    for (int i = 0; i < arraySize; ++i) {
+        if (planeArr[i].serialNum == serialNumber) {
+            return &planeArr[i];
+        }
+    }
+    return NULL;
+}

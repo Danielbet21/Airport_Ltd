@@ -45,11 +45,26 @@ void freeCompany(Airline *pAirline) {
     free(pAirline->planeArr);
 }
 
-int addFlight(Airline *pAirline, Flight *pFlight) {
-//  check if flight is not null
-    if (pFlight == NULL) {
+int addFlight(Airline *pAirline, AirportManager * pAirportManager){
+     if (pAirportManager->airportLength < 2) {
+        printf("There are not enough airport to set a flight\n");
+//         TODO unmark !!!
+//        return 0;
+    }
+     if (pAirline->planeCount < 1) {
+        printf("There is no plane in company\n");
         return 0;
     }
+    //  get plane form user
+    Plane *plane = getPlaneFromArr(pAirline->planeArr, pAirline->planeCount);
+    if (!plane) {
+        return 0;
+    }
+    Flight flight;
+    Flight *pFlight = &flight;
+    initFlight(&flight, pAirportManager, plane);
+
+
     pAirline->flightArr = (Flight**) realloc(pAirline->flightArr, (pAirline->numOfFlights + 1) * (sizeof(Flight*)));
 //  if allocate failed
     if (!pAirline->flightArr) {
