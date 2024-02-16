@@ -18,7 +18,7 @@ int initAirline(Airline *pAirline);
 void printAirline(const Airline *pAirline);
 void freeAirline(Airline *pAirline);
 int addFlight(Airline *pAirline, Flight *pFlight);
-int addPlane(Airline *pAirline, Plane *pPlane);
+int addPlane(Airline *pAirline);
 void doPrintFlightsWithPlaneType(const Airline *pAirline);
 
 

@@ -42,6 +42,7 @@ void freeAirline(Airline *pAirline) {
 //  free planes
     free(pAirline->airPlanesArr);
 }
+
 int addFlight(Airline *pAirline, Flight *pFlight) {
 //  check if flight is not null
     if (pFlight == NULL) {
@@ -58,24 +59,18 @@ int addFlight(Airline *pAirline, Flight *pFlight) {
     return 1;
 }
 
-int addPlane(Airline *pAirline, Plane *pPlane) {
-//  check if plane is not null
-    if (!pPlane) {
-        return 0;
-    }
-//  check if plane is not in the airline already
-    for (int i = 0; i < pAirline->numOfAirPlanes; ++i) {
-        if (pPlane->serialNum == pAirline->airPlanesArr[i].serialNum) {
-            printf("Found in system!\n ");
-            return 0;
-        }
-    }
+int addPlane(Airline *pAirline) {
+    // init the new plane
+    Plane plane;
+    initPlane(&plane, pAirline->airPlanesArr, pAirline->numOfAirPlanes);
+
+    // try to add the new plane to airline
     pAirline->airPlanesArr = (Plane*) realloc(pAirline->airPlanesArr, (pAirline->numOfAirPlanes+1) *(sizeof(Plane)));
 //  if allocate failed
     if (!pAirline->airPlanesArr) {
         return 0;
     }
-    pAirline->airPlanesArr[pAirline->numOfAirPlanes] = *pPlane;
+    pAirline->airPlanesArr[pAirline->numOfAirPlanes] = plane;
     pAirline->numOfAirPlanes++;
     return 1;
 }
