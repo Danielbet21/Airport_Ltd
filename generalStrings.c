@@ -12,7 +12,9 @@ char* getStrExactLength(const char* msg)
 	char inpStr[MAX_LENGTH]; //variable to hold the string that the user gives
 
 	//Ask for a string from the user
-    puts(msg);
+    if (msg != NULL) {
+        puts(msg);
+    }
 	myGets(inpStr, sizeof(inpStr));
 
 	//find string size and add 1 for the '\0'
