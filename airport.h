@@ -13,6 +13,8 @@ typedef struct {
 
 void getAirportName(Airport *port1);
 
+char *delete_white(char *str);
+
 void getAirportCode(char *code);
 
 void initAirportNoCode(Airport *pAirport);
