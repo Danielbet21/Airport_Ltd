@@ -13,4 +13,6 @@ add_executable(Desktop main.c
         generalStrings.c
         generalStrings.h
         airport.c
-        airport.h)
+        airport.h
+        airline.c
+        airline.h)
