@@ -3,9 +3,10 @@
 #include "airportManager.h"
 #include "airport.h"
 
-void initAirportManager(AirportManager *manager) {
+int initManager(AirportManager *manager) {
     manager->airportLength = 0;
     manager->airportList = NULL;
+    return 1;
 }
 
 void addAirport(AirportManager *manager) {

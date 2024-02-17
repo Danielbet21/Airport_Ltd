@@ -7,7 +7,7 @@ typedef struct {
 } AirportManager;
 
 
-void initAirportManager(AirportManager *manager);
+int initManager(AirportManager *manager);
 
 void addAirport(AirportManager *manager);
 
