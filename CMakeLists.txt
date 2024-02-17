@@ -13,4 +13,8 @@ add_executable(Desktop main.c
         generalStrings.h
         generalStrings.c
         date.c
-        date.h)
+        date.h
+        airline.c
+        airline.h
+        exe.h
+        exe.c)
