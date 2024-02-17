@@ -11,4 +11,5 @@ add_executable(Desktop main.c
         airport.c
         airport.h
         generalStrings.h
-        generalStrings.c)
+        generalStrings.c
+        date.c)

@@ -1,6 +1,8 @@
 #files
 main.c
-plane.c
-plane.h
+airport.c
+airport.h
+generalStrings.c
+generalStrings.h
 flight.c
 flight.h
