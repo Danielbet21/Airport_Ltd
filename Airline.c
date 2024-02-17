@@ -24,7 +24,6 @@ void printAirline(const Airline *pAirline) {
     printf("\n\n");
     printf(" -------- Has %d flights\n", pAirline->numOfFlights);
     printFlightsArr(pAirline);
-
 }
 
 
@@ -60,15 +59,19 @@ int addFlight(Airline *pAirline, AirportManager * pAirportManager){
     if (!plane) {
         return 0;
     }
-    Flight flight;
-    Flight *pFlight = &flight;
-    initFlight(&flight, pAirportManager, plane);
-
+    // Create flight dynamically
+    Flight *pFlight = (Flight *)malloc(sizeof(Flight));
+    if (!pFlight) {
+        return 0;
+    }
+    initFlight(pFlight, pAirportManager, plane);
+    printFlight(pFlight);
 
     pAirline->flightArr = (Flight**) realloc(pAirline->flightArr, (pAirline->numOfFlights + 1) * (sizeof(Flight*)));
 //  if allocate failed
     if (!pAirline->flightArr) {
         freeFlight(pFlight);
+        free(pFlight);
         return 0;
     }
     pAirline->flightArr[pAirline->numOfFlights] = pFlight;
