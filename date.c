@@ -85,11 +85,10 @@ void getCorrectDate(Date *pDate) {
     char *strDate;
     while (!res) {
         strDate = getStrExactLength("Enter Flight Date dd##mm##yyyy  minimum year 2023");
-        res = initDateFromString(pDate,strDate);
+        res = initDateFromString(pDate, strDate);
         if (!res) {
             printf("Error try again\n");
         }
     }
     free(strDate);
-
 }

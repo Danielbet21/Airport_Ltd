@@ -49,4 +49,10 @@ PlaneType getTypeFromUser(){
 
 void printPlane(const Plane *pPlane){
     printf("Plane: serial number:%d, type %s\n", pPlane->serialNum, PlaneTypesTitle[pPlane->type]);
+<<<<<<< HEAD
 };
+=======
+};
+
+
+>>>>>>> 58ced95f5be429e9e2c7eaed7829e902fdb2deff
