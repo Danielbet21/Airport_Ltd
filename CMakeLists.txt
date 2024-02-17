@@ -7,4 +7,8 @@ add_executable(Desktop main.c
         flight.c
         flight.h
         plane.h
-        plane.c)
+        plane.c
+        date.c
+        date.h
+        generalStrings.c
+        generalStrings.h)
