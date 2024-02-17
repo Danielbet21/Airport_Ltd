@@ -71,6 +71,5 @@ void printFlight(const Flight *pFlight){
     printDate(&pFlight->date);
     printf(" ");
     printPlane(pFlight->plane);
-    printf("\n");
 }
 
