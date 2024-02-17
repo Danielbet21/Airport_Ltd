@@ -5,14 +5,16 @@
 //Flight initFlight(){
 //    Flight flight;
 //    flight.plane_data;
-//    flight.airport_c_Tar = ;
-//    flight.airport_c_sour = ;
+//    flight.airport_c_Tar = IATACode();
+//    flight.airport_c_sour = IATACode();
 //    flight.date = date_function();
 //
 //    return flight;
 //}
 //
-//
+//int IATACode(){
+//    printf("");
+//}
 //
 //int isFlightFromSourceAirport(Flight *flight, int airport_code_src){
 //    if(flight->airport_c_sour == airport_code_src){

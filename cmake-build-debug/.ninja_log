@@ -1,3 +1,7 @@
 # ninja log v5
-0	129	7290019789365567	CMakeFiles/Desktop.dir/main.c.obj	dbab6dd63e74e926
-130	304	7290019791044190	Desktop.exe	2a543ea0a8623ead
+9	252	7298612683155460	CMakeFiles/Desktop.dir/main.c.obj	dbab6dd63e74e926
+390	661	7298614425890415	Desktop.exe	19e922bfed003ae3
+5	303	7297990123985205	CMakeFiles/Desktop.dir/generalStrings.c.obj	fde7da1b564bfade
+25	1042	7297988358034388	CMakeFiles/Desktop.dir/plane.c.obj	98f87171b076bd60
+12	389	7298614423222721	CMakeFiles/Desktop.dir/airport.c.obj	cabb6ca00f5f0a26
+38	1047	7297988358081971	CMakeFiles/Desktop.dir/flight.c.obj	810c39d133b109e4
