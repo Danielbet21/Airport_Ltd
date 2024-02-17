@@ -1,7 +1,4 @@
 "C:\Program Files\JetBrains\CLion 2023.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2023.3.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S "C:\Users\Home\Desktop\HW2_10010_2024A (1)\Airport_Ltd" -B "C:\Users\Home\Desktop\HW2_10010_2024A (1)\Airport_Ltd\cmake-build-debug"
-CMake Error at CMakeLists.txt:20:
-  Parse error.  Expected a command name, got unquoted argument with text
-  "=======".
-
-
--- Configuring incomplete, errors occurred!
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: C:/Users/Home/Desktop/HW2_10010_2024A (1)/Airport_Ltd/cmake-build-debug

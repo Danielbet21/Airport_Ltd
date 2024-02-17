@@ -15,5 +15,7 @@ add_executable(Desktop main.c
         airport.c
         airport.h
         airline.c
-        airline.h)
+        airline.h
+        exe.h
+        exe.c)
 
