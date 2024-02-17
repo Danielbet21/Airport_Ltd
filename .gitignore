@@ -5,3 +5,4 @@ date.c
 date.h
 airport.c
 airport.h
+CMakeLists.txt
