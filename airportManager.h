@@ -7,10 +7,10 @@ typedef struct {
 } AirportManager;
 
 
-AirportManager initAirportManager();
+void initAirportManager(AirportManager *manager);
 
 void addAirport(AirportManager *manager);
 
-void printAllAirports(AirportManager *manager);
+void printAirports(AirportManager *manager);
 
 Airport *findAirportByCode(AirportManager *manager, char *code);

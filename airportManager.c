@@ -3,10 +3,9 @@
 #include "airportManager.h"
 #include "airport.h"
 
-AirportManager initAirportManager() {
-    AirportManager manager;
-    manager.airportLength = 0;
-    return manager;
+void initAirportManager(AirportManager *manager) {
+    manager->airportLength = 0;
+    manager->airportList = NULL;
 }
 
 void addAirport(AirportManager *manager) {
@@ -16,20 +15,20 @@ void addAirport(AirportManager *manager) {
 }
 
 
-Airport* findAirportByCode(AirportManager *manager,char* code) {
+Airport *findAirportByCode(AirportManager *manager, char *code) {
     for (int i = 0; i < manager->airportLength; ++i) {
-        if(strcmp(manager->airportList[i]->IATA ,code) == 0){
+        if (strcmp(manager->airportList[i]->IATA, code) == 0) {
             return manager->airportList[i];
         }
     }
     return NULL;
 }
 
-void printAllAirports(AirportManager *manager){
-    printf("there are %d airports",manager->airportLength);
+void printAirports(AirportManager *manager) {
+    printf("there are %d airports", manager->airportLength);
     for (int i = 0; i < manager->airportLength; ++i) {
         printf("Airport name:%s                Country: %s                   Code:%s\n",
-        manager->airportList[i]->airport_name,manager->airportList[i]->country,manager->airportList[i]->IATA);
+               manager->airportList[i]->airport_name, manager->airportList[i]->country, manager->airportList[i]->IATA);
     }
 
 }
