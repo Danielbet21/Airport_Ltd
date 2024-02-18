@@ -14,7 +14,7 @@ typedef struct {
 } Flight;
 
 
-int initFlight(Flight *pFlight, const AirportManager *pManager,Plane *pPlane);
+int initFlight(Flight *pFlight,Plane *pPlane, const AirportManager *pManager);
 int isFlightFromSourceAirport(const Flight *flight, const char* airport_code);
 int isFlightToDestAirport(const Flight *flight, const char* airport_code_des);
 int isPlaneTypeInFlight(const Flight *flight, PlaneType planeType);

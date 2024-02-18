@@ -27,13 +27,12 @@ char *chooseAirport(Flight *pFlight, const AirportManager *pManager, int isSourc
     return airportCode;
 }
 
-int initFlight(Flight *pFlight,const AirportManager *pManager,Plane *pPlane){
+int initFlight(Flight *pFlight,Plane *pPlane,const AirportManager *pManager){
     // if plane is NULL will free the flight and return 0
-//    TODO unmark
-//    if(pManager->airportLength < 2 || !pPlane) {
-//        freeFlight(pFlight);
-//        return 0;
-//    }
+    if(pManager->airportLength < 2 || !pPlane) {
+        freeFlight(pFlight);
+        return 0;
+    }
     // set the airport codes (for source and destination)
     pFlight->airport_c_sour = chooseAirport(pFlight,pManager, 1);
     pFlight->airport_c_Tar = chooseAirport(pFlight, pManager, 0);

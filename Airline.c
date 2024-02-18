@@ -26,7 +26,6 @@ void printAirline(const Airline *pAirline) {
     printFlightsArr(pAirline);
 }
 
-
 void printFlightsArr(const Airline *pAirline) {
     for (int i = 0; i < pAirline->numOfFlights; i++) {
         printFlight(pAirline->flightArr[i]);
@@ -47,8 +46,7 @@ void freeCompany(Airline *pAirline) {
 int addFlight(Airline *pAirline, AirportManager * pAirportManager){
      if (pAirportManager->airportLength < 2) {
         printf("There are not enough airport to set a flight\n");
-//         TODO unmark !!!
-//        return 0;
+        return 0;
     }
      if (pAirline->planeCount < 1) {
         printf("There is no plane in company\n");
@@ -100,7 +98,8 @@ void doPrintFlightsWithPlaneType(const Airline *pAirline){
     printf("Flights with plane type %s:\n",PlaneTypesTitle[userSelect]);
     int check = 0;
     for (int i = 0; i < pAirline->numOfFlights; ++i) {
-        if (pAirline->flightArr[i]->plane->type == userSelect) {
+
+        if (isPlaneTypeInFlight(pAirline->flightArr[i], userSelect)) {
             printPlane(pAirline->flightArr[i]->plane);
             check =1;
         }
