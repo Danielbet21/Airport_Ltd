@@ -5,10 +5,13 @@
 #include "Date.h"
 #include "AirportManager.h"
 #include "generalStrings.h"
+#include "Airport.h"
+
+#define CODE_LENGTH 3
 
 typedef struct {
-    char *airport_c_sour;
-    char *airport_c_Tar;
+    char airport_c_sour[CODE_LENGTH +1];
+    char airport_c_Tar[CODE_LENGTH +1];
     Plane *plane;
     Date date;
 } Flight;
@@ -20,7 +23,7 @@ int isFlightToDestAirport(const Flight *flight, const char* airport_code_des);
 int isPlaneTypeInFlight(const Flight *flight, PlaneType planeType);
 void freeFlight(Flight *pFlight);
 void printFlight(const Flight *pFlight);
-char *chooseAirport(Flight *pFlight, const AirportManager *pManager,  int isSource);
+void chooseAirport(Flight *pFlight, const AirportManager *pManager);
 
 
 #endif
