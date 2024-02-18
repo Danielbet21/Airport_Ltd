@@ -12,7 +12,7 @@ char *chooseAirport(Flight *pFlight, const AirportManager *pManager, int isSourc
         outPutMessage = "destination";
     }
     // print all the airport from the airport manager
-    printAllAirports(pManager);
+    printAirports(pManager);
 //  get airport code from user until successfully
     do {
         printf("Enter code of %s airport:",outPutMessage);

@@ -60,10 +60,10 @@ int addFlight(Airline *pAirline, AirportManager * pAirportManager){
     // Create flight dynamically
     Flight *pFlight = (Flight *)malloc(sizeof(Flight));
     if (!pFlight) {
+        free(pFlight);
         return 0;
     }
-    initFlight(pFlight, pAirportManager, plane);
-    printFlight(pFlight);
+    initFlight(pFlight,plane,pAirportManager);
 
     pAirline->flightArr = (Flight**) realloc(pAirline->flightArr, (pAirline->numOfFlights + 1) * (sizeof(Flight*)));
 //  if allocate failed

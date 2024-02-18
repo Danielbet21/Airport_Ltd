@@ -2,8 +2,8 @@
 #define __FLIGHT_H__
 
 #include "Plane.h"
-#include "date.h"
-#include "airportManager.h"
+#include "Date.h"
+#include "AirportManager.h"
 #include "generalStrings.h"
 
 typedef struct {
