@@ -51,3 +51,9 @@ char* myGets(char* buffer, int size)
 	}
 	return NULL;
 }
+
+
+void cleanInputBuffer() {
+    int c;
+    while ((c = getchar()) != '\n' && c != EOF); // Read characters until newline or EOF
+}

@@ -63,7 +63,9 @@ int addFlight(Airline *pAirline, AirportManager * pAirportManager){
         free(pFlight);
         return 0;
     }
-    initFlight(pFlight,plane,pAirportManager);
+    if (!initFlight(pFlight,plane,pAirportManager)){
+        return 0;
+    }
 
     pAirline->flightArr = (Flight**) realloc(pAirline->flightArr, (pAirline->numOfFlights + 1) * (sizeof(Flight*)));
 //  if allocate failed

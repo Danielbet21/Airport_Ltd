@@ -8,5 +8,5 @@
 
 char*	getStrExactLength(const char* msg);
 char* 	myGets(char* buf, int size);
-
+void cleanInputBuffer();
 #endif
