@@ -55,8 +55,8 @@ build CMakeFiles/Desktop.dir/main.c.obj: C_COMPILER__Desktop_unscanned_Debug C$:
   OBJECT_DIR = CMakeFiles\Desktop.dir
   OBJECT_FILE_DIR = CMakeFiles\Desktop.dir
 
-build CMakeFiles/Desktop.dir/flight.c.obj: C_COMPILER__Desktop_unscanned_Debug C$:/Users/Home/Desktop/HW2_10010_2024A$ (1)/Airport_Ltd/flight.c || cmake_object_order_depends_target_Desktop
-  DEP_FILE = CMakeFiles\Desktop.dir\flight.c.obj.d
+build CMakeFiles/Desktop.dir/Flight.c.obj: C_COMPILER__Desktop_unscanned_Debug C$:/Users/Home/Desktop/HW2_10010_2024A$ (1)/Airport_Ltd/Flight.c || cmake_object_order_depends_target_Desktop
+  DEP_FILE = CMakeFiles\Desktop.dir\Flight.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Desktop.dir
   OBJECT_FILE_DIR = CMakeFiles\Desktop.dir
@@ -105,7 +105,7 @@ build CMakeFiles/Desktop.dir/exe.c.obj: C_COMPILER__Desktop_unscanned_Debug C$:/
 #############################################
 # Link the executable Desktop.exe
 
-build Desktop.exe: C_EXECUTABLE_LINKER__Desktop_Debug CMakeFiles/Desktop.dir/main.c.obj CMakeFiles/Desktop.dir/flight.c.obj CMakeFiles/Desktop.dir/plane.c.obj CMakeFiles/Desktop.dir/date.c.obj CMakeFiles/Desktop.dir/generalStrings.c.obj CMakeFiles/Desktop.dir/airport.c.obj CMakeFiles/Desktop.dir/airline.c.obj CMakeFiles/Desktop.dir/exe.c.obj
+build Desktop.exe: C_EXECUTABLE_LINKER__Desktop_Debug CMakeFiles/Desktop.dir/main.c.obj CMakeFiles/Desktop.dir/Flight.c.obj CMakeFiles/Desktop.dir/plane.c.obj CMakeFiles/Desktop.dir/date.c.obj CMakeFiles/Desktop.dir/generalStrings.c.obj CMakeFiles/Desktop.dir/airport.c.obj CMakeFiles/Desktop.dir/airline.c.obj CMakeFiles/Desktop.dir/exe.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Desktop.dir

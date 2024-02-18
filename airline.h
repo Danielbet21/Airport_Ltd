@@ -1,7 +1,7 @@
 #ifndef __AIRLINE__
 #define __AIRLINE__
 
-#include "flight.h"
+#include "Flight.h"
 #include "plane.h"
 #include "generalStrings.h"
 // airline struct
