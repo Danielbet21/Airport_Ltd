@@ -1,39 +1,36 @@
 #include <stdio.h>
-#include "airport.h"
-#include "stdlib.h"
-#include "string.h"
-#include "ctype.h"
+#include <stdlib.h>
+#include "Plane.h"
+#include "Airline.h"
+#include "AirportManager.h"
 
-int main() {
-    int opt;
-    printf("Please choose one of the following options\n");
-    printf("1 - Date\n");
-    printf("2 - Plane\n");
-    printf("3 - Airport Code\n");
-    printf("4 - Airport Name\n");
-    printf("5 - Airport\n");
-    scanf("%d", &opt);
-    getchar();
-    Airport port1;
-    switch (opt) {
-        case 3:
-            getAirportCode(port1.code);
-            printf("%s\n", port1.code);
-            break;
-
-        case 4:
-            getAirportName(&port1);
-            printf("%s\n", port1.name);
-            free(port1.name);
-            break;
-
-        case 5:
-            getAirportCode(port1.code);
-            initAirportNoCode(&port1);
-            printAirport(&port1);
-            freeAirport(&port1);
-            break;
-
+int main()
+{
+    AirportManager manager;
+    int ok = 1;
+    //This function get a pointer to the struct AirportManager
+    //The function set the array to NULL and count to 0 (always return 1)
+    if (!initManager(&manager))
+    {
+        printf("Error\n");
+        return 0;
     }
 
+    for (int i = 0; i < 4; i++)
+    {
+        //This function get the address of the struct
+        //The function add an airport to the array
+        if (!addAirport(&manager))
+        {
+            printf("Error\n");
+            freeManager(&manager);
+            ok = 0;
+            break;
+        }
+    }
+    if(ok)
+    {
+        printAirports(&manager);
+        freeManager(&manager);
+    }
 }

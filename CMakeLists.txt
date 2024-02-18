@@ -6,16 +6,18 @@ set(CMAKE_C_STANDARD 11)
 add_executable(Desktop main.c
         Flight.c
         Flight.h
-        plane.h
-        plane.c
+        Plane.h
+        Plane.c
         date.c
         date.h
         generalStrings.c
         generalStrings.h
         airport.c
         airport.h
-        airline.c
-        airline.h
+        Airline.c
+        Airline.h
         exe.h
-        exe.c)
+        exe.c
+        Airportmanager.c
+        Airportmanager.h)
 

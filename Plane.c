@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "plane.h"
+#include "Plane.h"
 
 #define MIN_SERIAL_NUM 1
 #define MAX_SERIAL_NUM 9999
@@ -49,10 +49,38 @@ PlaneType getTypeFromUser(){
 
 void printPlane(const Plane *pPlane){
     printf("Plane: serial number:%d, type %s\n", pPlane->serialNum, PlaneTypesTitle[pPlane->type]);
-<<<<<<< HEAD
-};
-=======
 };
 
 
->>>>>>> 58ced95f5be429e9e2c7eaed7829e902fdb2deff
+void printPlanesArr(const Plane *planeArr, int arraySize) {
+    for (int i = 0; i < arraySize; i++) {
+        printPlane(planeArr + i);
+    }
+}
+
+Plane* getPlaneFromArr(Plane *planeArr, int arraySize) {
+    printf("Choose a plane from list, type its serial Number\n");
+    printPlanesArr(planeArr, arraySize);
+    Plane *pPlane = NULL;
+    int userSerialNum = 0;
+    while (!pPlane) {
+        scanf("%d",&userSerialNum);
+        if (userSerialNum < MIN_SERIAL_NUM || userSerialNum > MAX_SERIAL_NUM) {
+            printf("No plane with that serial number! Try again!\n");
+        }
+        else {
+            pPlane = getPlaneWithSerialNumber(planeArr,arraySize,userSerialNum);
+            if (!pPlane) {
+                printf("No plane with that serial number! Try again!\n");
+            }
+        }}
+}
+
+Plane* getPlaneWithSerialNumber(Plane *planeArr, int arraySize, int serialNumber) {
+    for (int i = 0; i < arraySize; ++i) {
+        if (planeArr[i].serialNum == serialNumber) {
+            return &planeArr[i];
+        }
+    }
+    return NULL;
+}
