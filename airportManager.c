@@ -48,7 +48,17 @@ void printAirports(AirportManager *manager) {
     }
 
 }
-void freeManager(AirportManager *manager){
+
+int codeExist(const AirportManager pManager, char *airportCode) {
+    for (int i = 0; i < pManager.airportLength; ++i) {
+        if (pManager.airportList[i]->code == airportCode) {
+            return 1;
+        }
+    }
+    return 0;
+}
+
+void freeManager(AirportManager *manager) {
     for (int i = 0; i < manager->airportLength; ++i) {
         freeAirport(manager->airportList[i]);
     }

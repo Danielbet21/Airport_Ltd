@@ -1,3 +1,5 @@
+#ifndef __MANAGER__
+#define __MANAGER__
 #include "airport.h"
 
 typedef struct {
@@ -16,3 +18,6 @@ void printAirports(AirportManager *manager);
 Airport *findAirportByCode(AirportManager *manager, char *code);
 
 void freeManager(AirportManager *manager);
+
+
+#endif

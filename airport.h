@@ -1,22 +1,37 @@
 #ifndef __AIRPORT__
 #define __AIRPORT__
 
+#include "ctype.h"
+
 #define len 4
 
 typedef struct {
-    char *airport_name;
+    char *name;
     char *country;
-    char IATA[len]; // 3 letters + '\0'
+    char code[len]; // 3 letters + '\0'
 } Airport;
 
+void getAirportName(Airport *port1);
+
+char *delete_white(char *str);
+
+void getAirportCode(char *code);
+
+void initAirportNoCode(Airport *pAirport);
+
+void printAirport(Airport *pAirport);
+
+void freeAirport(Airport *pAirport);
 
 void initAirport(Airport *pAirport);
 
-char* validateIATA();
+char *validateIATA(char *userInput);
 
 int isSameAirport(Airport *airport1, Airport *airport2);
 
-int isAirportCode(Airport *airport, const char *IATA);
+char converter(char *name, int j);
+
+int isAirportCode(Airport *airport, const char *code);
 
 char *validateName(char *name);
 
