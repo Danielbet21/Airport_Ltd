@@ -2,6 +2,7 @@
 #include "string.h"
 #include "airportManager.h"
 #include "airport.h"
+#include "stdlib.h"
 
 int initManager(AirportManager *manager) {
     manager->airportLength = 0;
@@ -9,10 +10,24 @@ int initManager(AirportManager *manager) {
     return 1;
 }
 
-void addAirport(AirportManager *manager) {
-    Airport *temp = manager->airportList[manager->airportLength];
-    initAirport(temp);
+int addAirport(AirportManager *manager) {
+    Airport *tempAirport = (Airport *) malloc(sizeof(Airport));
+    if (!tempAirport) {
+        free(tempAirport);
+        return 0;
+    }
+    initAirport(tempAirport);
+    manager->airportList = (Airport **) realloc(manager->airportList,
+                                                (sizeof(Airport *)) * (manager->airportLength + 1));
+
+    if (manager->airportList) {
+        freeAirport(tempAirport);
+        free(manager->airportList);
+        return 0;
+    }
+    manager->airportList[manager->airportLength] = tempAirport;
     manager->airportLength++;
+    return 1;
 }
 
 
@@ -32,4 +47,10 @@ void printAirports(AirportManager *manager) {
                manager->airportList[i]->airport_name, manager->airportList[i]->country, manager->airportList[i]->IATA);
     }
 
+}
+void freeManager(AirportManager *manager){
+    for (int i = 0; i < manager->airportLength; ++i) {
+        freeAirport(manager->airportList[i]);
+    }
+    free(manager->airportList);
 }

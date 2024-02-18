@@ -80,6 +80,9 @@ CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
 //Value Computed by CMake.
 CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=C:/Users/Home/Desktop/HW2_10010_2024A (1)/Airport_Ltd/cmake-build-debug/CMakeFiles/pkgRedirects
 
+//Convert GNU import libraries to MS format (requires Visual Studio)
+CMAKE_GNUtoMS:BOOL=OFF
+
 //Install path prefix, prepended onto install directories.
 CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/Desktop
 

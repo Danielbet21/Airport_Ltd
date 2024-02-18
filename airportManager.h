@@ -9,7 +9,7 @@ typedef struct {
 
 int initManager(AirportManager *manager);
 
-void addAirport(AirportManager *manager);
+int addAirport(AirportManager *manager);
 
 void printAirports(AirportManager *manager);
 
