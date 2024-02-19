@@ -1,16 +1,13 @@
-#include "airport.h"
+#include "Airport.h"
 #include "stdio.h"
 #include "stdlib.h"
 #include "string.h"
 #include "generalStrings.h"
 
 void initAirport(Airport *pAirport) {
-    getAirportName(pAirport);
-
-    printf("Add airport's country:\n");
-    scanf("%s", pAirport->country);
-
     getAirportCode(pAirport->code);
+    getAirportName(pAirport);
+    getAirportCountry(pAirport);
 }
 
 int isSameAirport(Airport *airport1, Airport *airport2) {
@@ -29,30 +26,33 @@ int isAirportCode(Airport *airport, const char *IATA) {
     }
 }
 
-char *validateIATA(char *code) {
+void validateIATA(char *code) {
     do {
-        char *userInput = getStrExactLength("Enter airport code  - 3 UPPER CASE letters");
-        if (strlen(userInput) != 3) {
+        char *temp = getStrExactLength("Enter airport code  - 3 UPPER CASE letters");
+//        printf("Enter airport code  - 3 UPPER CASE letters\n");
+//        scanf("%s", temp);
+        if (strlen(temp) != 3) {
             printf("code should be 3 letters\n");
             continue;
         }
         int isValid = 1;
         for (int i = 0; i < 3; ++i) {
-            if ((userInput[i]) < 'A' || userInput[i] > 'Z') {
+            if ((temp[i]) < 'A' || temp[i] > 'Z') {
                 printf("Need to be upper case letter\n");
                 isValid = 0;
                 break;
             }
         }
+        if (isValid) {
+            strcpy(code, temp);
+            free(temp);
+            break;// Exit loop if the code is valid
+        }
         if (!isValid) {
-            free(userInput);
+            free(temp);
             continue;
         }
-        strcpy(code, userInput);
-        free(userInput);
-        break; // Exit loop if the code is valid
     } while (1);
-    return code;
 }
 
 char *dynamicAlloc(int num_of_words) {
@@ -185,12 +185,25 @@ void getAirportName(Airport *pAirport) {
 }
 
 void getAirportCode(char *code) {
-    strcpy(code, validateIATA(code));
+    validateIATA(code);
+}
+
+void getAirportCountry(Airport *pAirport) {
+    char temp1[100];
+    printf("Add airport's country:\n");
+    scanf("%99s", temp1);
+    pAirport->country = (char *) malloc(strlen(temp1) + 1);
+
+    if (!pAirport->country) {
+        return;
+    }
+
+    strcpy(pAirport->country, temp1);
 }
 
 void initAirportNoCode(Airport *pAirport) {
     getAirportName(pAirport);
-    pAirport->country = getStrExactLength("Enter airport country");
+//    pAirport->country = getStrExactLength("Enter airport country");
 
 }
 
@@ -201,5 +214,4 @@ void printAirport(Airport *pAirport) {
 
 void freeAirport(Airport *pAirport) {
     free(pAirport->country);
-    free(pAirport->name);
 }

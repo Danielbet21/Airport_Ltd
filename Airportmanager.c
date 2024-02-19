@@ -1,7 +1,7 @@
 #include "stdio.h"
 #include "string.h"
 #include "AirportManager.h"
-#include "airport.h"
+#include "Airport.h"
 #include "stdlib.h"
 
 int initManager(AirportManager *manager) {
@@ -13,18 +13,17 @@ int initManager(AirportManager *manager) {
 int addAirport(AirportManager *manager) {
     Airport *tempAirport = (Airport *) malloc(sizeof(Airport));
     if (!tempAirport) {
-        free(tempAirport);
         return 0;
     }
     initAirport(tempAirport);
     manager->airportList = (Airport **) realloc(manager->airportList,
                                                 (sizeof(Airport *)) * (manager->airportLength + 1));
-
-    if (manager->airportList) {
+    if (!(manager->airportList)) {
         freeAirport(tempAirport);
         free(manager->airportList);
         return 0;
     }
+
     manager->airportList[manager->airportLength] = tempAirport;
     manager->airportLength++;
     return 1;
@@ -41,10 +40,11 @@ Airport *findAirportByCode(AirportManager *manager, char *code) {
 }
 
 void printAirports(const AirportManager *manager) {
-    printf("there are %d airports", manager->airportLength);
+    printf("there are %d airports\n", manager->airportLength);
     for (int i = 0; i < manager->airportLength; ++i) {
-        printf("Airport name:%s                Country: %s                   Code:%s\n",
+        printf("Airport name:%-20s Country: %-15s Code:%-5s\n",
                manager->airportList[i]->name, manager->airportList[i]->country, manager->airportList[i]->code);
+        printf("\n");
     }
 
 }
@@ -58,7 +58,7 @@ int codeExist(const AirportManager *pManager, char *airportCode) {
     return 0;
 }
 
-void freeManager(AirportManager *manager){
+void freeManager(AirportManager *manager) {
     for (int i = 0; i < manager->airportLength; ++i) {
         freeAirport(manager->airportList[i]);
     }

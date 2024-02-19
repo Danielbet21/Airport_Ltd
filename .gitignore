@@ -1,6 +1,6 @@
 #files
-airport.c
-airport.h
+Airport.c
+Airport.h
 date.c
 date.h
 exe.c

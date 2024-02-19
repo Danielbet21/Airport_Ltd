@@ -17,6 +17,8 @@ char *delete_white(char *str);
 
 void getAirportCode(char *code);
 
+void getAirportCountry(Airport *pAirport);
+
 void initAirportNoCode(Airport *pAirport);
 
 void printAirport(Airport *pAirport);
@@ -25,7 +27,7 @@ void freeAirport(Airport *pAirport);
 
 void initAirport(Airport *pAirport);
 
-char *validateIATA(char *userInput);
+void validateIATA(char *userInput);
 
 int isSameAirport(Airport *airport1, Airport *airport2);
 
