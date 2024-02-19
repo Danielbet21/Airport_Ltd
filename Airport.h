@@ -1,8 +1,12 @@
 #ifndef __AIRPORT__
 #define __AIRPORT__
 
+#include "stdio.h"
+#include "stdlib.h"
+#include "string.h"
 #include "ctype.h"
-
+#include "Airport.h"
+#include "generalStrings.h"
 #define len 4
 
 typedef struct {

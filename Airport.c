@@ -1,8 +1,4 @@
 #include "Airport.h"
-#include "stdio.h"
-#include "stdlib.h"
-#include "string.h"
-#include "generalStrings.h"
 
 void initAirport(Airport *pAirport) {
     getAirportCode(pAirport->code);
@@ -29,8 +25,6 @@ int isAirportCode(Airport *airport, const char *IATA) {
 void validateIATA(char *code) {
     do {
         char *temp = getStrExactLength("Enter airport code  - 3 UPPER CASE letters");
-//        printf("Enter airport code  - 3 UPPER CASE letters\n");
-//        scanf("%s", temp);
         if (strlen(temp) != 3) {
             printf("code should be 3 letters\n");
             continue;
@@ -203,8 +197,7 @@ void getAirportCountry(Airport *pAirport) {
 
 void initAirportNoCode(Airport *pAirport) {
     getAirportName(pAirport);
-//    pAirport->country = getStrExactLength("Enter airport country");
-
+    getAirportCountry(pAirport);
 }
 
 void printAirport(Airport *pAirport) {

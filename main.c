@@ -23,29 +23,9 @@ int main() {
             ok = 0;
             break;
         }
-        for (int j = 0; j < 1; ++j) {
-            printf("%s\n", manager.airportList[i]->name);
-            printf("%s\n", manager.airportList[i]->country);
-            printf("%s\n", manager.airportList[i]->code);
-        }
-        printf("end of info manager printing - main\n");
     }
     if (ok) {
         printAirports(&manager);
         freeManager(&manager);
     }
 }
-/*
-ABC
-logen
-USA
-ABC
-DEF
-ben gurion
-Israel
-RRR
-the best one
-Greece
-ZZZ
-sleeping
-Italy*/

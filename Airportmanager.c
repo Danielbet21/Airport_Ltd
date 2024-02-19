@@ -11,11 +11,21 @@ int initManager(AirportManager *manager) {
 }
 
 int addAirport(AirportManager *manager) {
+
     Airport *tempAirport = (Airport *) malloc(sizeof(Airport));
     if (!tempAirport) {
         return 0;
     }
-    initAirport(tempAirport);
+    int ExistCode;
+    do {
+        getAirportCode(tempAirport->code);
+        ExistCode = codeExist(manager, tempAirport->code);
+        if (ExistCode) {
+            printf("This code already in use - enter a different code\n");
+        }
+    } while (ExistCode);
+
+    initAirportNoCode(tempAirport);
     manager->airportList = (Airport **) realloc(manager->airportList,
                                                 (sizeof(Airport *)) * (manager->airportLength + 1));
     if (!(manager->airportList)) {
@@ -51,7 +61,7 @@ void printAirports(const AirportManager *manager) {
 
 int codeExist(const AirportManager *pManager, char *airportCode) {
     for (int i = 0; i < pManager->airportLength; ++i) {
-        if (pManager->airportList[i]->code == airportCode) {
+        if (strcmp(pManager->airportList[i]->code, airportCode) == 0) {
             return 1;
         }
     }
