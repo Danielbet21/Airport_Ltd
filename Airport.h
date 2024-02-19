@@ -31,8 +31,6 @@ void freeAirport(Airport *pAirport);
 
 void initAirport(Airport *pAirport);
 
-void validateIATA(char *userInput);
-
 int isSameAirport(Airport *airport1, Airport *airport2);
 
 char converter(char *name, int j);
@@ -40,6 +38,11 @@ char converter(char *name, int j);
 int isAirportCode(Airport *airport, const char *code);
 
 char *validateName(char *name);
+
+void oneWordName(char* name, char* new_name);
+void evenName(char* name, char* new_name);
+void oddName(char* name, char* new_name);
+
 
 char *dynamicAlloc(int num_of_words);
 

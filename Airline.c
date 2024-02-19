@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "Airline.h"
+#include "Plane.h"
 
 int initAirline(Airline *pAirline) {
     pAirline->name = getStrExactLength("Enter Airline name");

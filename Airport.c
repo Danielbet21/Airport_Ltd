@@ -22,7 +22,7 @@ int isAirportCode(Airport *airport, const char *IATA) {
     }
 }
 
-void validateIATA(char *code) {
+void getAirportCode(char *code) {
     do {
         char *temp = getStrExactLength("Enter airport code  - 3 UPPER CASE letters");
         if (strlen(temp) != 3) {
@@ -65,6 +65,59 @@ char converter(char *name, int j) {
     return name[j];
 }
 
+void oneWordName(char* name, char* new_name){
+    // if 0 (one word)-> all uppercase and put '_' between each letter
+    //converting to upper case all letters in one word case
+    for (int j = 0; j < strlen(name); ++j) {
+        if (name[j] <= 'z' && name[j] >= 'a') {
+            name[j] = (char) (name[j] - 32);
+        }
+    }
+    int i = 0;
+    for (int j = 0; j < strlen(name); j++) {
+        if (j < strlen(name) - 1) { // Check if not the last letter
+            new_name[i++] = name[j];
+            new_name[i++] = '_';
+        } else {
+            new_name[i++] = name[j];
+        }
+    }
+    new_name[i] = '\0';
+}
+
+void evenName(char* name, char* new_name){
+    int i = 0;
+    //converting only the first letter in the word
+    for (int j = 0; j < strlen(name); ++j) {
+        if (name[j] <= 'z' && name[j] >= 'a' || name[j] <= 'Z' && name[j] >= 'A') {
+            if (j - 1 == -1 || name[j - 1] == ' ') {
+                new_name[j] = converter(name, j);
+            }
+            new_name[j] = name[j];
+        } else {
+            new_name[j] = name[j];
+        }
+        i++;
+    }
+    new_name[i] = '\0';
+}
+
+void oddName(char* name, char* new_name){
+    int i = 0;
+    for (int j = 0; j < strlen(name); ++j) {
+        if (name[j] <= 'z' && name[j] >= 'a' || name[j] <= 'Z' && name[j] >= 'A') {
+            if (j - 1 == -1 || name[j - 1] == ' ') {
+                new_name[i] = converter(name, j);
+            }
+            new_name[i] = name[j];
+        } else if (name[j] == ' ') {
+            new_name[i] = ' ';
+            new_name[++i] = ' ';
+        }
+        i++;
+    }
+    new_name[i] = '\0';
+}
 char *insertBlank(char *name, int num_of_words) {
     //allocate new mem for the modification:
     char *new_name;
@@ -76,55 +129,12 @@ char *insertBlank(char *name, int num_of_words) {
     }
 
     if (num_of_words == 1) {
-        // if 0 (one word)-> all uppercase and put '_' between each letter
-        //converting to upper case all letters in one word case
-        for (int j = 0; j < strlen(name); ++j) {
-            if (name[j] <= 'z' && name[j] >= 'a') {
-                name[j] = (char) (name[j] - 32);
-            }
-        }
-        int i = 0;
-        for (int j = 0; j < strlen(name); j++) {
-            if (j < strlen(name) - 1) { // Check if not the last letter
-                new_name[i++] = name[j];
-                new_name[i++] = '_';
-            } else {
-                new_name[i++] = name[j];
-            }
-        }
-        new_name[i] = '\0';
-
+        oneWordName(name,new_name);
         // if num of words in odd-> '_' , if even-> '__' between each letter
     } else if (num_of_words % 2 != 0) {
-        int i = 0;
-        //converting only the first letter in the word
-        for (int j = 0; j < strlen(name); ++j) {
-            if (name[j] <= 'z' && name[j] >= 'a' || name[j] <= 'Z' && name[j] >= 'A') {
-                if (j - 1 == -1 || name[j - 1] == ' ') {
-                    new_name[j] = converter(name, j);
-                }
-                new_name[j] = name[j];
-            } else {
-                new_name[j] = name[j];
-            }
-            i++;
-        }
-        new_name[i] = '\0';
+        evenName(name,new_name);
     } else if (num_of_words % 2 == 0) {
-        int i = 0;
-        for (int j = 0; j < strlen(name); ++j) {
-            if (name[j] <= 'z' && name[j] >= 'a' || name[j] <= 'Z' && name[j] >= 'A') {
-                if (j - 1 == -1 || name[j - 1] == ' ') {
-                    new_name[i] = converter(name, j);
-                }
-                new_name[i] = name[j];
-            } else if (name[j] == ' ') {
-                new_name[i] = ' ';
-                new_name[++i] = ' ';
-            }
-            i++;
-        }
-        new_name[i] = '\0';
+        oddName(name,new_name);
     }
     return new_name;
 }
@@ -176,10 +186,6 @@ void getAirportName(Airport *pAirport) {
     char *name = getStrExactLength("Enter airport name");
     name = validateName(name);
     pAirport->name = name;
-}
-
-void getAirportCode(char *code) {
-    validateIATA(code);
 }
 
 void getAirportCountry(Airport *pAirport) {

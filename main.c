@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "Plane.h"
 #include "Airline.h"
-//#include "AirportManager.h"
+#include "AirportManager.h"
 
 int main() {
     AirportManager manager;
