@@ -1,11 +1,14 @@
 #files
-Airport.c
-Airport.h
 date.c
 date.h
 exe.c
 exe.h
 Flight.h
+Flight.c
+Airline.c
+Airport.h
+generalStrings.c
+generalStrings.h
 
 #repo
 cmake-build-debug

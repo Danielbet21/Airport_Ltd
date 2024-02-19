@@ -14,7 +14,7 @@ int main() {
         return 0;
     }
 
-    for (int i = 0; i < 2; i++) {
+    for (int i = 0; i < 1; i++) {
         //This function get the address of the struct
         //The function add an airport to the array
         if (!addAirport(&manager)) {
