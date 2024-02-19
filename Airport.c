@@ -80,11 +80,7 @@ char *insertBlank(char *name, int num_of_words) {
         //converting to upper case all letters in one word case
         for (int j = 0; j < strlen(name); ++j) {
             if (name[j] <= 'z' && name[j] >= 'a') {
-                if (name[j] <= 'Z' && name[j] >= 'A') {
-
-                } else {
-                    name[j] = (char) (name[j] - 32);
-                }
+                name[j] = (char) (name[j] - 32);
             }
         }
         int i = 0;
