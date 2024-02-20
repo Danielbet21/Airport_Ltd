@@ -92,5 +92,4 @@ void getCorrectDate(Date *pDate) {
             printf("Error try again\n");
         }
     }
-
 }
