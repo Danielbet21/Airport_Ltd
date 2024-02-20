@@ -76,10 +76,58 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/softwere/One Drive/OneDrive - Afeka College Of Engineering/C projects/IOS_exe2/flight.c">
+		<Unit filename="D:/softwere/One Drive/OneDrive - Afeka College Of Engineering/C projects/IOS_exe2/Airline.c">
 			<Option target="Desktop"/>
 		</Unit>
-		<Unit filename="D:/softwere/One Drive/OneDrive - Afeka College Of Engineering/C projects/IOS_exe2/flight.h">
+		<Unit filename="D:/softwere/One Drive/OneDrive - Afeka College Of Engineering/C projects/IOS_exe2/Airline.h">
+			<Option target="Desktop"/>
+		</Unit>
+		<Unit filename="D:/softwere/One Drive/OneDrive - Afeka College Of Engineering/C projects/IOS_exe2/Airport.c">
+			<Option target="Desktop"/>
+		</Unit>
+		<Unit filename="D:/softwere/One Drive/OneDrive - Afeka College Of Engineering/C projects/IOS_exe2/Airport.h">
+			<Option target="Desktop"/>
+		</Unit>
+		<Unit filename="D:/softwere/One Drive/OneDrive - Afeka College Of Engineering/C projects/IOS_exe2/AirportManager.c">
+			<Option target="Desktop"/>
+		</Unit>
+		<Unit filename="D:/softwere/One Drive/OneDrive - Afeka College Of Engineering/C projects/IOS_exe2/AirportManager.h">
+			<Option target="Desktop"/>
+		</Unit>
+		<Unit filename="D:/softwere/One Drive/OneDrive - Afeka College Of Engineering/C projects/IOS_exe2/Date.c">
+			<Option target="Desktop"/>
+		</Unit>
+		<Unit filename="D:/softwere/One Drive/OneDrive - Afeka College Of Engineering/C projects/IOS_exe2/Date.h">
+			<Option target="Desktop"/>
+		</Unit>
+		<Unit filename="D:/softwere/One Drive/OneDrive - Afeka College Of Engineering/C projects/IOS_exe2/Flight.c">
+			<Option target="Desktop"/>
+		</Unit>
+		<Unit filename="D:/softwere/One Drive/OneDrive - Afeka College Of Engineering/C projects/IOS_exe2/Flight.h">
+			<Option target="Desktop"/>
+		</Unit>
+		<Unit filename="D:/softwere/One Drive/OneDrive - Afeka College Of Engineering/C projects/IOS_exe2/Plane.c">
+			<Option target="Desktop"/>
+		</Unit>
+		<Unit filename="D:/softwere/One Drive/OneDrive - Afeka College Of Engineering/C projects/IOS_exe2/Plane.h">
+			<Option target="Desktop"/>
+		</Unit>
+		<Unit filename="D:/softwere/One Drive/OneDrive - Afeka College Of Engineering/C projects/IOS_exe2/Tests.c">
+			<Option target="Desktop"/>
+		</Unit>
+		<Unit filename="D:/softwere/One Drive/OneDrive - Afeka College Of Engineering/C projects/IOS_exe2/Tests.h">
+			<Option target="Desktop"/>
+		</Unit>
+		<Unit filename="D:/softwere/One Drive/OneDrive - Afeka College Of Engineering/C projects/IOS_exe2/exe.c">
+			<Option target="Desktop"/>
+		</Unit>
+		<Unit filename="D:/softwere/One Drive/OneDrive - Afeka College Of Engineering/C projects/IOS_exe2/exe.h">
+			<Option target="Desktop"/>
+		</Unit>
+		<Unit filename="D:/softwere/One Drive/OneDrive - Afeka College Of Engineering/C projects/IOS_exe2/generalStrings.c">
+			<Option target="Desktop"/>
+		</Unit>
+		<Unit filename="D:/softwere/One Drive/OneDrive - Afeka College Of Engineering/C projects/IOS_exe2/generalStrings.h">
 			<Option target="Desktop"/>
 		</Unit>
 		<Unit filename="D:/softwere/One Drive/OneDrive - Afeka College Of Engineering/C projects/IOS_exe2/main.c">

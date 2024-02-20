@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include "date.h"
+#include "Date.h"
 #include "generalStrings.h"
 #define DATE_DELIMITER '/'
 #define VALID_YEAR_START 2023
@@ -81,15 +81,15 @@ int initDateFromString(Date *pDate, char *dateStr) {
 }
 
 void getCorrectDate(Date *pDate) {
+    char dateBuffer[255];
+    int bufferSize = 255;
     int res = 0;
-    char *strDate;
     while (!res) {
-        strDate = getStrExactLength("Enter Flight Date dd##mm##yyyy  minimum year 2023");
-        res = initDateFromString(pDate,strDate);
+        printf("Enter Flight Date dd##mm##yyyy  minimum year 2023\n");
+        myGets(dateBuffer,bufferSize);
+        res = initDateFromString(pDate,dateBuffer);
         if (!res) {
             printf("Error try again\n");
         }
     }
-    free(strDate);
-
 }
