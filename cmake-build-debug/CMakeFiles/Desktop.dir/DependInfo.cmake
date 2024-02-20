@@ -8,7 +8,15 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/softwere/One Drive/OneDrive - Afeka College Of Engineering/C projects/IOS_exe2/flight.c" "CMakeFiles/Desktop.dir/flight.c.obj" "gcc" "CMakeFiles/Desktop.dir/flight.c.obj.d"
+  "D:/softwere/One Drive/OneDrive - Afeka College Of Engineering/C projects/IOS_exe2/Airline.c" "CMakeFiles/Desktop.dir/Airline.c.obj" "gcc" "CMakeFiles/Desktop.dir/Airline.c.obj.d"
+  "D:/softwere/One Drive/OneDrive - Afeka College Of Engineering/C projects/IOS_exe2/Airport.c" "CMakeFiles/Desktop.dir/Airport.c.obj" "gcc" "CMakeFiles/Desktop.dir/Airport.c.obj.d"
+  "D:/softwere/One Drive/OneDrive - Afeka College Of Engineering/C projects/IOS_exe2/AirportManager.c" "CMakeFiles/Desktop.dir/Airportmanager.c.obj" "gcc" "CMakeFiles/Desktop.dir/Airportmanager.c.obj.d"
+  "D:/softwere/One Drive/OneDrive - Afeka College Of Engineering/C projects/IOS_exe2/Date.c" "CMakeFiles/Desktop.dir/Date.c.obj" "gcc" "CMakeFiles/Desktop.dir/Date.c.obj.d"
+  "D:/softwere/One Drive/OneDrive - Afeka College Of Engineering/C projects/IOS_exe2/Flight.c" "CMakeFiles/Desktop.dir/Flight.c.obj" "gcc" "CMakeFiles/Desktop.dir/Flight.c.obj.d"
+  "D:/softwere/One Drive/OneDrive - Afeka College Of Engineering/C projects/IOS_exe2/Plane.c" "CMakeFiles/Desktop.dir/Plane.c.obj" "gcc" "CMakeFiles/Desktop.dir/Plane.c.obj.d"
+  "D:/softwere/One Drive/OneDrive - Afeka College Of Engineering/C projects/IOS_exe2/Tests.c" "CMakeFiles/Desktop.dir/Tests.c.obj" "gcc" "CMakeFiles/Desktop.dir/Tests.c.obj.d"
+  "D:/softwere/One Drive/OneDrive - Afeka College Of Engineering/C projects/IOS_exe2/exe.c" "CMakeFiles/Desktop.dir/exe.c.obj" "gcc" "CMakeFiles/Desktop.dir/exe.c.obj.d"
+  "D:/softwere/One Drive/OneDrive - Afeka College Of Engineering/C projects/IOS_exe2/generalStrings.c" "CMakeFiles/Desktop.dir/generalStrings.c.obj" "gcc" "CMakeFiles/Desktop.dir/generalStrings.c.obj.d"
   "D:/softwere/One Drive/OneDrive - Afeka College Of Engineering/C projects/IOS_exe2/main.c" "CMakeFiles/Desktop.dir/main.c.obj" "gcc" "CMakeFiles/Desktop.dir/main.c.obj.d"
   )
 

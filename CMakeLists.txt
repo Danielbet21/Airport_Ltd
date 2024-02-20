@@ -3,6 +3,7 @@ project(Desktop C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(Desktop main.c
-        flight.c
-        flight.h)
+# Add all source files in the current directory to the executable
+file(GLOB SOURCES "*.c" "*.h")
+
+add_executable(Desktop ${SOURCES})

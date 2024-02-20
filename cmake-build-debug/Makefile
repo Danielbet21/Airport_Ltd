@@ -128,29 +128,221 @@ Desktop/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Desktop.dir\build.make CMakeFiles/Desktop.dir/build
 .PHONY : Desktop/fast
 
-flight.obj: flight.c.obj
-.PHONY : flight.obj
+Airline.obj: Airline.c.obj
+.PHONY : Airline.obj
 
 # target to build an object file
-flight.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Desktop.dir\build.make CMakeFiles/Desktop.dir/flight.c.obj
-.PHONY : flight.c.obj
+Airline.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Desktop.dir\build.make CMakeFiles/Desktop.dir/Airline.c.obj
+.PHONY : Airline.c.obj
 
-flight.i: flight.c.i
-.PHONY : flight.i
+Airline.i: Airline.c.i
+.PHONY : Airline.i
 
 # target to preprocess a source file
-flight.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Desktop.dir\build.make CMakeFiles/Desktop.dir/flight.c.i
-.PHONY : flight.c.i
+Airline.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Desktop.dir\build.make CMakeFiles/Desktop.dir/Airline.c.i
+.PHONY : Airline.c.i
 
-flight.s: flight.c.s
-.PHONY : flight.s
+Airline.s: Airline.c.s
+.PHONY : Airline.s
 
 # target to generate assembly for a file
-flight.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Desktop.dir\build.make CMakeFiles/Desktop.dir/flight.c.s
-.PHONY : flight.c.s
+Airline.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Desktop.dir\build.make CMakeFiles/Desktop.dir/Airline.c.s
+.PHONY : Airline.c.s
+
+Airport.obj: Airport.c.obj
+.PHONY : Airport.obj
+
+# target to build an object file
+Airport.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Desktop.dir\build.make CMakeFiles/Desktop.dir/Airport.c.obj
+.PHONY : Airport.c.obj
+
+Airport.i: Airport.c.i
+.PHONY : Airport.i
+
+# target to preprocess a source file
+Airport.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Desktop.dir\build.make CMakeFiles/Desktop.dir/Airport.c.i
+.PHONY : Airport.c.i
+
+Airport.s: Airport.c.s
+.PHONY : Airport.s
+
+# target to generate assembly for a file
+Airport.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Desktop.dir\build.make CMakeFiles/Desktop.dir/Airport.c.s
+.PHONY : Airport.c.s
+
+AirportManager.obj: AirportManager.c.obj
+.PHONY : AirportManager.obj
+
+# target to build an object file
+AirportManager.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Desktop.dir\build.make CMakeFiles/Desktop.dir/AirportManager.c.obj
+.PHONY : AirportManager.c.obj
+
+AirportManager.i: AirportManager.c.i
+.PHONY : AirportManager.i
+
+# target to preprocess a source file
+AirportManager.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Desktop.dir\build.make CMakeFiles/Desktop.dir/AirportManager.c.i
+.PHONY : AirportManager.c.i
+
+AirportManager.s: AirportManager.c.s
+.PHONY : AirportManager.s
+
+# target to generate assembly for a file
+AirportManager.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Desktop.dir\build.make CMakeFiles/Desktop.dir/AirportManager.c.s
+.PHONY : AirportManager.c.s
+
+Date.obj: Date.c.obj
+.PHONY : Date.obj
+
+# target to build an object file
+Date.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Desktop.dir\build.make CMakeFiles/Desktop.dir/Date.c.obj
+.PHONY : Date.c.obj
+
+Date.i: Date.c.i
+.PHONY : Date.i
+
+# target to preprocess a source file
+Date.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Desktop.dir\build.make CMakeFiles/Desktop.dir/Date.c.i
+.PHONY : Date.c.i
+
+Date.s: Date.c.s
+.PHONY : Date.s
+
+# target to generate assembly for a file
+Date.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Desktop.dir\build.make CMakeFiles/Desktop.dir/Date.c.s
+.PHONY : Date.c.s
+
+Flight.obj: Flight.c.obj
+.PHONY : Flight.obj
+
+# target to build an object file
+Flight.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Desktop.dir\build.make CMakeFiles/Desktop.dir/Flight.c.obj
+.PHONY : Flight.c.obj
+
+Flight.i: Flight.c.i
+.PHONY : Flight.i
+
+# target to preprocess a source file
+Flight.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Desktop.dir\build.make CMakeFiles/Desktop.dir/Flight.c.i
+.PHONY : Flight.c.i
+
+Flight.s: Flight.c.s
+.PHONY : Flight.s
+
+# target to generate assembly for a file
+Flight.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Desktop.dir\build.make CMakeFiles/Desktop.dir/Flight.c.s
+.PHONY : Flight.c.s
+
+Plane.obj: Plane.c.obj
+.PHONY : Plane.obj
+
+# target to build an object file
+Plane.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Desktop.dir\build.make CMakeFiles/Desktop.dir/Plane.c.obj
+.PHONY : Plane.c.obj
+
+Plane.i: Plane.c.i
+.PHONY : Plane.i
+
+# target to preprocess a source file
+Plane.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Desktop.dir\build.make CMakeFiles/Desktop.dir/Plane.c.i
+.PHONY : Plane.c.i
+
+Plane.s: Plane.c.s
+.PHONY : Plane.s
+
+# target to generate assembly for a file
+Plane.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Desktop.dir\build.make CMakeFiles/Desktop.dir/Plane.c.s
+.PHONY : Plane.c.s
+
+Tests.obj: Tests.c.obj
+.PHONY : Tests.obj
+
+# target to build an object file
+Tests.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Desktop.dir\build.make CMakeFiles/Desktop.dir/Tests.c.obj
+.PHONY : Tests.c.obj
+
+Tests.i: Tests.c.i
+.PHONY : Tests.i
+
+# target to preprocess a source file
+Tests.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Desktop.dir\build.make CMakeFiles/Desktop.dir/Tests.c.i
+.PHONY : Tests.c.i
+
+Tests.s: Tests.c.s
+.PHONY : Tests.s
+
+# target to generate assembly for a file
+Tests.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Desktop.dir\build.make CMakeFiles/Desktop.dir/Tests.c.s
+.PHONY : Tests.c.s
+
+exe.obj: exe.c.obj
+.PHONY : exe.obj
+
+# target to build an object file
+exe.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Desktop.dir\build.make CMakeFiles/Desktop.dir/exe.c.obj
+.PHONY : exe.c.obj
+
+exe.i: exe.c.i
+.PHONY : exe.i
+
+# target to preprocess a source file
+exe.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Desktop.dir\build.make CMakeFiles/Desktop.dir/exe.c.i
+.PHONY : exe.c.i
+
+exe.s: exe.c.s
+.PHONY : exe.s
+
+# target to generate assembly for a file
+exe.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Desktop.dir\build.make CMakeFiles/Desktop.dir/exe.c.s
+.PHONY : exe.c.s
+
+generalStrings.obj: generalStrings.c.obj
+.PHONY : generalStrings.obj
+
+# target to build an object file
+generalStrings.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Desktop.dir\build.make CMakeFiles/Desktop.dir/generalStrings.c.obj
+.PHONY : generalStrings.c.obj
+
+generalStrings.i: generalStrings.c.i
+.PHONY : generalStrings.i
+
+# target to preprocess a source file
+generalStrings.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Desktop.dir\build.make CMakeFiles/Desktop.dir/generalStrings.c.i
+.PHONY : generalStrings.c.i
+
+generalStrings.s: generalStrings.c.s
+.PHONY : generalStrings.s
+
+# target to generate assembly for a file
+generalStrings.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Desktop.dir\build.make CMakeFiles/Desktop.dir/generalStrings.c.s
+.PHONY : generalStrings.c.s
 
 main.obj: main.c.obj
 .PHONY : main.obj
@@ -185,9 +377,33 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Desktop
-	@echo ... flight.obj
-	@echo ... flight.i
-	@echo ... flight.s
+	@echo ... Airline.obj
+	@echo ... Airline.i
+	@echo ... Airline.s
+	@echo ... Airport.obj
+	@echo ... Airport.i
+	@echo ... Airport.s
+	@echo ... AirportManager.obj
+	@echo ... AirportManager.i
+	@echo ... AirportManager.s
+	@echo ... Date.obj
+	@echo ... Date.i
+	@echo ... Date.s
+	@echo ... Flight.obj
+	@echo ... Flight.i
+	@echo ... Flight.s
+	@echo ... Plane.obj
+	@echo ... Plane.i
+	@echo ... Plane.s
+	@echo ... Tests.obj
+	@echo ... Tests.i
+	@echo ... Tests.s
+	@echo ... exe.obj
+	@echo ... exe.i
+	@echo ... exe.s
+	@echo ... generalStrings.obj
+	@echo ... generalStrings.i
+	@echo ... generalStrings.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -68,10 +68,136 @@ include CMakeFiles/Desktop.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Desktop.dir/flags.make
 
+CMakeFiles/Desktop.dir/Airline.c.obj: CMakeFiles/Desktop.dir/flags.make
+CMakeFiles/Desktop.dir/Airline.c.obj: D:/softwere/One\ Drive/OneDrive\ -\ Afeka\ College\ Of\ Engineering/C\ projects/IOS_exe2/Airline.c
+CMakeFiles/Desktop.dir/Airline.c.obj: CMakeFiles/Desktop.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Desktop.dir/Airline.c.obj"
+	"D:\softwere\Clion\CLion 2023.3.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Desktop.dir/Airline.c.obj -MF CMakeFiles\Desktop.dir\Airline.c.obj.d -o CMakeFiles\Desktop.dir\Airline.c.obj -c "D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\Airline.c"
+
+CMakeFiles/Desktop.dir/Airline.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Desktop.dir/Airline.c.i"
+	"D:\softwere\Clion\CLion 2023.3.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\Airline.c" > CMakeFiles\Desktop.dir\Airline.c.i
+
+CMakeFiles/Desktop.dir/Airline.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Desktop.dir/Airline.c.s"
+	"D:\softwere\Clion\CLion 2023.3.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\Airline.c" -o CMakeFiles\Desktop.dir\Airline.c.s
+
+CMakeFiles/Desktop.dir/Airport.c.obj: CMakeFiles/Desktop.dir/flags.make
+CMakeFiles/Desktop.dir/Airport.c.obj: D:/softwere/One\ Drive/OneDrive\ -\ Afeka\ College\ Of\ Engineering/C\ projects/IOS_exe2/Airport.c
+CMakeFiles/Desktop.dir/Airport.c.obj: CMakeFiles/Desktop.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Desktop.dir/Airport.c.obj"
+	"D:\softwere\Clion\CLion 2023.3.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Desktop.dir/Airport.c.obj -MF CMakeFiles\Desktop.dir\Airport.c.obj.d -o CMakeFiles\Desktop.dir\Airport.c.obj -c "D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\Airport.c"
+
+CMakeFiles/Desktop.dir/Airport.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Desktop.dir/Airport.c.i"
+	"D:\softwere\Clion\CLion 2023.3.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\Airport.c" > CMakeFiles\Desktop.dir\Airport.c.i
+
+CMakeFiles/Desktop.dir/Airport.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Desktop.dir/Airport.c.s"
+	"D:\softwere\Clion\CLion 2023.3.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\Airport.c" -o CMakeFiles\Desktop.dir\Airport.c.s
+
+CMakeFiles/Desktop.dir/AirportManager.c.obj: CMakeFiles/Desktop.dir/flags.make
+CMakeFiles/Desktop.dir/AirportManager.c.obj: D:/softwere/One\ Drive/OneDrive\ -\ Afeka\ College\ Of\ Engineering/C\ projects/IOS_exe2/AirportManager.c
+CMakeFiles/Desktop.dir/AirportManager.c.obj: CMakeFiles/Desktop.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Desktop.dir/AirportManager.c.obj"
+	"D:\softwere\Clion\CLion 2023.3.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Desktop.dir/AirportManager.c.obj -MF CMakeFiles\Desktop.dir\AirportManager.c.obj.d -o CMakeFiles\Desktop.dir\AirportManager.c.obj -c "D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\AirportManager.c"
+
+CMakeFiles/Desktop.dir/AirportManager.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Desktop.dir/AirportManager.c.i"
+	"D:\softwere\Clion\CLion 2023.3.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\AirportManager.c" > CMakeFiles\Desktop.dir\AirportManager.c.i
+
+CMakeFiles/Desktop.dir/AirportManager.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Desktop.dir/AirportManager.c.s"
+	"D:\softwere\Clion\CLion 2023.3.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\AirportManager.c" -o CMakeFiles\Desktop.dir\AirportManager.c.s
+
+CMakeFiles/Desktop.dir/Date.c.obj: CMakeFiles/Desktop.dir/flags.make
+CMakeFiles/Desktop.dir/Date.c.obj: D:/softwere/One\ Drive/OneDrive\ -\ Afeka\ College\ Of\ Engineering/C\ projects/IOS_exe2/Date.c
+CMakeFiles/Desktop.dir/Date.c.obj: CMakeFiles/Desktop.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Desktop.dir/Date.c.obj"
+	"D:\softwere\Clion\CLion 2023.3.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Desktop.dir/Date.c.obj -MF CMakeFiles\Desktop.dir\Date.c.obj.d -o CMakeFiles\Desktop.dir\Date.c.obj -c "D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\Date.c"
+
+CMakeFiles/Desktop.dir/Date.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Desktop.dir/Date.c.i"
+	"D:\softwere\Clion\CLion 2023.3.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\Date.c" > CMakeFiles\Desktop.dir\Date.c.i
+
+CMakeFiles/Desktop.dir/Date.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Desktop.dir/Date.c.s"
+	"D:\softwere\Clion\CLion 2023.3.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\Date.c" -o CMakeFiles\Desktop.dir\Date.c.s
+
+CMakeFiles/Desktop.dir/Flight.c.obj: CMakeFiles/Desktop.dir/flags.make
+CMakeFiles/Desktop.dir/Flight.c.obj: D:/softwere/One\ Drive/OneDrive\ -\ Afeka\ College\ Of\ Engineering/C\ projects/IOS_exe2/Flight.c
+CMakeFiles/Desktop.dir/Flight.c.obj: CMakeFiles/Desktop.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Desktop.dir/Flight.c.obj"
+	"D:\softwere\Clion\CLion 2023.3.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Desktop.dir/Flight.c.obj -MF CMakeFiles\Desktop.dir\Flight.c.obj.d -o CMakeFiles\Desktop.dir\Flight.c.obj -c "D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\Flight.c"
+
+CMakeFiles/Desktop.dir/Flight.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Desktop.dir/Flight.c.i"
+	"D:\softwere\Clion\CLion 2023.3.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\Flight.c" > CMakeFiles\Desktop.dir\Flight.c.i
+
+CMakeFiles/Desktop.dir/Flight.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Desktop.dir/Flight.c.s"
+	"D:\softwere\Clion\CLion 2023.3.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\Flight.c" -o CMakeFiles\Desktop.dir\Flight.c.s
+
+CMakeFiles/Desktop.dir/Plane.c.obj: CMakeFiles/Desktop.dir/flags.make
+CMakeFiles/Desktop.dir/Plane.c.obj: D:/softwere/One\ Drive/OneDrive\ -\ Afeka\ College\ Of\ Engineering/C\ projects/IOS_exe2/Plane.c
+CMakeFiles/Desktop.dir/Plane.c.obj: CMakeFiles/Desktop.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Desktop.dir/Plane.c.obj"
+	"D:\softwere\Clion\CLion 2023.3.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Desktop.dir/Plane.c.obj -MF CMakeFiles\Desktop.dir\Plane.c.obj.d -o CMakeFiles\Desktop.dir\Plane.c.obj -c "D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\Plane.c"
+
+CMakeFiles/Desktop.dir/Plane.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Desktop.dir/Plane.c.i"
+	"D:\softwere\Clion\CLion 2023.3.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\Plane.c" > CMakeFiles\Desktop.dir\Plane.c.i
+
+CMakeFiles/Desktop.dir/Plane.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Desktop.dir/Plane.c.s"
+	"D:\softwere\Clion\CLion 2023.3.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\Plane.c" -o CMakeFiles\Desktop.dir\Plane.c.s
+
+CMakeFiles/Desktop.dir/Tests.c.obj: CMakeFiles/Desktop.dir/flags.make
+CMakeFiles/Desktop.dir/Tests.c.obj: D:/softwere/One\ Drive/OneDrive\ -\ Afeka\ College\ Of\ Engineering/C\ projects/IOS_exe2/Tests.c
+CMakeFiles/Desktop.dir/Tests.c.obj: CMakeFiles/Desktop.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Desktop.dir/Tests.c.obj"
+	"D:\softwere\Clion\CLion 2023.3.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Desktop.dir/Tests.c.obj -MF CMakeFiles\Desktop.dir\Tests.c.obj.d -o CMakeFiles\Desktop.dir\Tests.c.obj -c "D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\Tests.c"
+
+CMakeFiles/Desktop.dir/Tests.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Desktop.dir/Tests.c.i"
+	"D:\softwere\Clion\CLion 2023.3.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\Tests.c" > CMakeFiles\Desktop.dir\Tests.c.i
+
+CMakeFiles/Desktop.dir/Tests.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Desktop.dir/Tests.c.s"
+	"D:\softwere\Clion\CLion 2023.3.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\Tests.c" -o CMakeFiles\Desktop.dir\Tests.c.s
+
+CMakeFiles/Desktop.dir/exe.c.obj: CMakeFiles/Desktop.dir/flags.make
+CMakeFiles/Desktop.dir/exe.c.obj: D:/softwere/One\ Drive/OneDrive\ -\ Afeka\ College\ Of\ Engineering/C\ projects/IOS_exe2/exe.c
+CMakeFiles/Desktop.dir/exe.c.obj: CMakeFiles/Desktop.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/Desktop.dir/exe.c.obj"
+	"D:\softwere\Clion\CLion 2023.3.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Desktop.dir/exe.c.obj -MF CMakeFiles\Desktop.dir\exe.c.obj.d -o CMakeFiles\Desktop.dir\exe.c.obj -c "D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\exe.c"
+
+CMakeFiles/Desktop.dir/exe.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Desktop.dir/exe.c.i"
+	"D:\softwere\Clion\CLion 2023.3.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\exe.c" > CMakeFiles\Desktop.dir\exe.c.i
+
+CMakeFiles/Desktop.dir/exe.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Desktop.dir/exe.c.s"
+	"D:\softwere\Clion\CLion 2023.3.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\exe.c" -o CMakeFiles\Desktop.dir\exe.c.s
+
+CMakeFiles/Desktop.dir/generalStrings.c.obj: CMakeFiles/Desktop.dir/flags.make
+CMakeFiles/Desktop.dir/generalStrings.c.obj: D:/softwere/One\ Drive/OneDrive\ -\ Afeka\ College\ Of\ Engineering/C\ projects/IOS_exe2/generalStrings.c
+CMakeFiles/Desktop.dir/generalStrings.c.obj: CMakeFiles/Desktop.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/Desktop.dir/generalStrings.c.obj"
+	"D:\softwere\Clion\CLion 2023.3.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Desktop.dir/generalStrings.c.obj -MF CMakeFiles\Desktop.dir\generalStrings.c.obj.d -o CMakeFiles\Desktop.dir\generalStrings.c.obj -c "D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\generalStrings.c"
+
+CMakeFiles/Desktop.dir/generalStrings.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Desktop.dir/generalStrings.c.i"
+	"D:\softwere\Clion\CLion 2023.3.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\generalStrings.c" > CMakeFiles\Desktop.dir\generalStrings.c.i
+
+CMakeFiles/Desktop.dir/generalStrings.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Desktop.dir/generalStrings.c.s"
+	"D:\softwere\Clion\CLion 2023.3.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\generalStrings.c" -o CMakeFiles\Desktop.dir\generalStrings.c.s
+
 CMakeFiles/Desktop.dir/main.c.obj: CMakeFiles/Desktop.dir/flags.make
 CMakeFiles/Desktop.dir/main.c.obj: D:/softwere/One\ Drive/OneDrive\ -\ Afeka\ College\ Of\ Engineering/C\ projects/IOS_exe2/main.c
 CMakeFiles/Desktop.dir/main.c.obj: CMakeFiles/Desktop.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Desktop.dir/main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/Desktop.dir/main.c.obj"
 	"D:\softwere\Clion\CLion 2023.3.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Desktop.dir/main.c.obj -MF CMakeFiles\Desktop.dir\main.c.obj.d -o CMakeFiles\Desktop.dir\main.c.obj -c "D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\main.c"
 
 CMakeFiles/Desktop.dir/main.c.i: cmake_force
@@ -82,35 +208,37 @@ CMakeFiles/Desktop.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Desktop.dir/main.c.s"
 	"D:\softwere\Clion\CLion 2023.3.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\main.c" -o CMakeFiles\Desktop.dir\main.c.s
 
-CMakeFiles/Desktop.dir/flight.c.obj: CMakeFiles/Desktop.dir/flags.make
-CMakeFiles/Desktop.dir/flight.c.obj: D:/softwere/One\ Drive/OneDrive\ -\ Afeka\ College\ Of\ Engineering/C\ projects/IOS_exe2/flight.c
-CMakeFiles/Desktop.dir/flight.c.obj: CMakeFiles/Desktop.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Desktop.dir/flight.c.obj"
-	"D:\softwere\Clion\CLion 2023.3.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Desktop.dir/flight.c.obj -MF CMakeFiles\Desktop.dir\flight.c.obj.d -o CMakeFiles\Desktop.dir\flight.c.obj -c "D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\flight.c"
-
-CMakeFiles/Desktop.dir/flight.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Desktop.dir/flight.c.i"
-	"D:\softwere\Clion\CLion 2023.3.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\flight.c" > CMakeFiles\Desktop.dir\flight.c.i
-
-CMakeFiles/Desktop.dir/flight.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Desktop.dir/flight.c.s"
-	"D:\softwere\Clion\CLion 2023.3.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\flight.c" -o CMakeFiles\Desktop.dir\flight.c.s
-
 # Object files for target Desktop
 Desktop_OBJECTS = \
-"CMakeFiles/Desktop.dir/main.c.obj" \
-"CMakeFiles/Desktop.dir/flight.c.obj"
+"CMakeFiles/Desktop.dir/Airline.c.obj" \
+"CMakeFiles/Desktop.dir/Airport.c.obj" \
+"CMakeFiles/Desktop.dir/AirportManager.c.obj" \
+"CMakeFiles/Desktop.dir/Date.c.obj" \
+"CMakeFiles/Desktop.dir/Flight.c.obj" \
+"CMakeFiles/Desktop.dir/Plane.c.obj" \
+"CMakeFiles/Desktop.dir/Tests.c.obj" \
+"CMakeFiles/Desktop.dir/exe.c.obj" \
+"CMakeFiles/Desktop.dir/generalStrings.c.obj" \
+"CMakeFiles/Desktop.dir/main.c.obj"
 
 # External object files for target Desktop
 Desktop_EXTERNAL_OBJECTS =
 
+Desktop.exe: CMakeFiles/Desktop.dir/Airline.c.obj
+Desktop.exe: CMakeFiles/Desktop.dir/Airport.c.obj
+Desktop.exe: CMakeFiles/Desktop.dir/AirportManager.c.obj
+Desktop.exe: CMakeFiles/Desktop.dir/Date.c.obj
+Desktop.exe: CMakeFiles/Desktop.dir/Flight.c.obj
+Desktop.exe: CMakeFiles/Desktop.dir/Plane.c.obj
+Desktop.exe: CMakeFiles/Desktop.dir/Tests.c.obj
+Desktop.exe: CMakeFiles/Desktop.dir/exe.c.obj
+Desktop.exe: CMakeFiles/Desktop.dir/generalStrings.c.obj
 Desktop.exe: CMakeFiles/Desktop.dir/main.c.obj
-Desktop.exe: CMakeFiles/Desktop.dir/flight.c.obj
 Desktop.exe: CMakeFiles/Desktop.dir/build.make
 Desktop.exe: CMakeFiles/Desktop.dir/linkLibs.rsp
 Desktop.exe: CMakeFiles/Desktop.dir/objects1.rsp
 Desktop.exe: CMakeFiles/Desktop.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable Desktop.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="D:\softwere\One Drive\OneDrive - Afeka College Of Engineering\C projects\IOS_exe2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Linking C executable Desktop.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Desktop.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

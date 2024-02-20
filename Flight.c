@@ -29,7 +29,7 @@ void chooseAirport(Flight *pFlight, const AirportManager *pManager) {
         }
         int validCode = 0;
         do {
-            printf("Enter code of %s airport:", prompt);
+            printf("Enter code of %s airport:\n", prompt);
             myGets(buffer, bufferSize);
             validCode = codeExist(pManager, buffer);
             if (!validCode) {
@@ -66,9 +66,7 @@ int isPlaneTypeInFlight(const Flight *flight, PlaneType planeType) {
 }
 
 void freeFlight(Flight *pFlight) {
-//    TODO fix this part
-//    free(pFlight->airport_c_sour);
-//    free(pFlight->airport_c_Tar);
+    free(pFlight);
 }
 
 void printFlight(const Flight *pFlight) {
@@ -77,4 +75,3 @@ void printFlight(const Flight *pFlight) {
     printf(" ");
     printPlane(pFlight->plane);
 }
-

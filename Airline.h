@@ -15,7 +15,7 @@ typedef struct {
 
 // functions
 int initAirline(Airline *pAirline);
-void printAirline(const Airline *pAirline);
+void printCompany(const Airline *pAirline);
 void freeCompany(Airline *pAirline);
 void printFlightsArr(const Airline *pAirline);
 int addFlight(Airline *pAirline, AirportManager * pAirportManager);

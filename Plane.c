@@ -72,8 +72,8 @@ Plane* getPlaneFromArr(Plane *planeArr, int arraySize) {
             pPlane = getPlaneWithSerialNumber(planeArr,arraySize,userSerialNum);
             if (!pPlane) {
                 printf("No plane with that serial number! Try again!\n");
-        }
-    }}
+            }
+        }}
 }
 
 Plane* getPlaneWithSerialNumber(Plane *planeArr, int arraySize, int serialNumber) {

@@ -17,7 +17,7 @@ int initAirline(Airline *pAirline) {
     return 1;
 }
 
-void printAirline(const Airline *pAirline) {
+void printCompany(const Airline *pAirline) {
     printf("Airline %s\n\n",pAirline->name);
     printf(" -------- Has %d planes\n",pAirline->planeCount);
     printPlanesArr(pAirline->planeArr, pAirline->planeCount);
@@ -102,7 +102,7 @@ void doPrintFlightsWithPlaneType(const Airline *pAirline){
     for (int i = 0; i < pAirline->numOfFlights; ++i) {
 
         if (isPlaneTypeInFlight(pAirline->flightArr[i], userSelect)) {
-            printPlane(pAirline->flightArr[i]->plane);
+            printFlight(pAirline->flightArr[i]);
             check =1;
         }
     }
